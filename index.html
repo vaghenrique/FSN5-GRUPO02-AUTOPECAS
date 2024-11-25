@@ -1,23 +1,23 @@
 <!DOCTYPE HTML>
-<!--
-	Landed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Olimpo Peças</title>
 		<meta charset="utf-8" />
+		<link rel="icon" href="images/logo.png" type="logo img">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload landing">
+	<body class="is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
 			<header id="header">
-				<h1 id="logo"><a href="index.html">Olimpo Peças</a></h1>
+				<h1 id="logo">
+					<a href="index.html">
+						<img src="images/logo.png" alt="Olimpo Peças" style="width: 100px; height: auto;">
+					</a>
+				</h1>
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html">Início</a></li>
@@ -38,7 +38,7 @@
 							</ul>
 						</li>
 						<li><a href="contato.html">Contato</a></li>
-						<li><a href="#" class="button primary">Faça um Pedido</a></li>
+						<li><a href="#pedido" class="button primary">Faça um Orçamento</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -140,14 +140,14 @@
 						</div>
 						<footer class="major">
 							<ul class="actions special">
-								<li><a href="https://api.whatsapp.com/" class="button">Fale com um Consultor</a></li>
+								<li><a href="https://api.whatsapp.com/" class="button" target="_blank">Fale com um Consultor</a></li>
 							</ul>
 						</footer>
 					</div>
 				</section>
 
 			<!-- Five -->
-				<section id="five" class="wrapper style2 special fade">
+				<section id="pedido" class="wrapper style2 special fade">
 					<div class="container">
 						<header>
 							<h2>Entre em Contato</h2>
@@ -247,13 +247,6 @@
 					</div>
 				</section>
 
-				<script>
-					function showThankYouMessage(event) {
-						event.preventDefault();
-						document.getElementById('thank-you-message').style.display = 'block';
-					}
-				</script>
-
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
@@ -265,13 +258,14 @@
 						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Olimpo Peças. Todos os direitos reservados.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; 2024 Olimpo Auto Peças.</li>
 					</ul>
 				</footer>
 
 		</div>
 
 		<!-- Scripts -->
+		 	<script src="assets/js/msg.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
