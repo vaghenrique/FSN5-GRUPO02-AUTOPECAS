@@ -33,6 +33,11 @@ body {
 	line-height: 1;
 }
 
+.logo {
+	width: 75px;
+    height: auto;
+}
+
 ol, ul {
 	list-style: none;
 }
