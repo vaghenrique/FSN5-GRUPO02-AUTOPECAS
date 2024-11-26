@@ -34,7 +34,7 @@ O projeto é composto pelos seguintes arquivos e diretórios principais:
 ```
 .
 ├── index.html                     # Página inicial
-├── contato.html                   # Página de contato
+├── contato.html                   # Página de contato e Historia da empresa
 ├── filtros.html                   # Página de filtros automotivos
 ├── frenagem.html                  # Página de frenagem
 ├── motor.html                     # Página de peças de motor
@@ -52,11 +52,14 @@ O projeto é composto pelos seguintes arquivos e diretórios principais:
 
 ### Principais Páginas
 
-- **Home (`index.html`)**: Página inicial com destaques de produtos e informações da loja.
-- **Catálogo de Peças**: Navegação por categorias e busca por peças específicas.
-- **Detalhes do Produto**: Informações detalhadas de cada peça.
-- **Carrinho de Compras**: Gerenciamento de itens selecionados.
-- **Checkout**: Finalização de pedidos e inserção de informações de pagamento e envio.
+- **Home (`index.html`)**: Página inicial com destaques de produtos e formulário para contato.
+- **Contato (`contato.html`)**: Página com história da empresa,imagens,premiações,avaliações e informações.
+- **Filtros Automotivos (`filtros.html`)**: Página dedicada a filtros automotivos.
+- **Frenagem (`frenagem.html`)**: Página com informações sobre peças de frenagem.
+- **Motor (`motor.html`)**: Página com detalhes sobre peças de motor.
+- **Óleos e Lubrificantes (`oleos_lubrificantes.html`)**: Página dedicada a óleos e lubrificantes.
+- **Suspensão (`suspensao.html`)**: Página com informações sobre peças de suspensão.
+- **Acessórios (`acessorios.html`)**: Página dedicada a acessórios automotivos.
 
 ---
 
