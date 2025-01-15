@@ -1,87 +1,85 @@
-# Olimpo Auto Peças - FSN5-GRUPO02-AUTOPEÇAS
+# Projeto Integrador - Desenvolvimento de um Site de Vendas Utilizando React 🚀  
 
-Bem-vindo ao repositório do projeto **Olimpo Auto Peças**, desenvolvido pela turma **FSN5-GRUPO02**. Este projeto é uma aplicação web que oferece uma experiência prática e eficiente para a compra de peças automotivas. 
+Este projeto é um e-commerce funcional e dinâmico, desenvolvido como parte do **Projeto Integrador** do curso. O objetivo é aplicar boas práticas de desenvolvimento com React, incluindo componentização, gerenciamento de estado, roteamento e estilização responsiva.  
 
----
+## 🎯 Objetivo  
+Criar uma aplicação escalável e moderna que simule uma plataforma de vendas online, com páginas principais, funcionalidades básicas e extras para enriquecer a experiência do usuário.  
 
-## 🛠️ Estrutura de Branches
-
-A organização do projeto segue um fluxo de branches que facilita a colaboração e a integração contínua:
-
-- **`Sally`**: Branch de desenvolvimento da Sally.
-- **`Gabriel`**: Branch de desenvolvimento do Gabriel.
-- **`Caio`**: Branch de desenvolvimento do Caio.
-- **`Pedro`**: Branch de desenvolvimento do Pedro.
-- **`Nicolas`**: Branch de desenvolvimento do Nicolas.
-- **`test`**: Branch destinada à integração e testes de funcionalidades das branches individuais.
-- **`main`**: Branch principal onde o código final, validado, é consolidado.
+## 🛠️ Tecnologias Utilizadas  
+- **React**  
+- **Vite 6.1.1**  
+- **React Router**  
+- **React Context API** (ou Redux)  
+- **CSS Modules** (ou outra biblioteca de estilização como Styled Components)  
 
 ---
 
-## 🔄 Fluxo de Trabalho
+## 📋 Requisitos e Funcionalidades Implementadas  
 
-1. Cada desenvolvedor trabalha em sua branch individual de desenvolvimento.
-2. Ao finalizar uma funcionalidade ou correção, a branch individual é mergeada na branch `test`.
-3. A branch `test` é utilizada para realizar testes integrados, garantindo que todas as funcionalidades coexistam corretamente.
-4. Após a validação na branch `test`, é feito merging na branch `main`.
+### Estrutura e Layout Geral  
+- **Layout Responsivo e Amigável**  
+- **3 Páginas Principais**:  
+  - **Página Inicial**: Vitrine de produtos.  
+  - **Detalhes do Produto**: Informações detalhadas de cada produto.  
+  - **Carrinho de Compras**: Gerenciamento de itens adicionados.  
 
----
+### Componentização e Reutilização  
+- **Componentes Reutilizáveis**:  
+  - Cabeçalho com navegação.  
+  - Rodapé com informações do site.  
+  - Cartões de produtos (na vitrine e no carrinho).  
+  - Botões personalizados.  
 
-## 🗂️ Estrutura do Projeto
+### Gerenciamento de Estados  
+- **Context API** ou Redux para estados globais:  
+  - Lista de produtos no carrinho.  
+  - Quantidade total de itens.  
+  - Preço total do carrinho.  
+- **Ações Disponíveis**:  
+  - Adicionar/Remover produtos do carrinho.  
+  - Alterar a quantidade de produtos no carrinho.  
 
-O projeto é composto pelos seguintes arquivos e diretórios principais:
+### Roteamento  
+- **React Router** para navegação:  
+  - `/`: Página inicial.  
+  - `/produto/:id`: Detalhes do produto.  
+  - `/carrinho`: Carrinho de compras.  
 
-```
-.
-├── index.html                     # Página inicial
-├── contato.html                   # Página de contato e Historia da empresa
-├── filtros.html                   # Página de filtros automotivos
-├── frenagem.html                  # Página de frenagem
-├── motor.html                     # Página de peças de motor
-├── oleos_lubrificantes.html       # Página de óleos e lubrificantes
-├── suspensao.html                 # Página de suspensão
-├── assets/                        # Recursos estáticos
-│   ├── css/                       # Arquivos CSS
-│   ├── js/                        # Scripts JavaScript
-│   ├── sass/                      # Arquivos SCSS
-│   └── webfonts/                  # Fontes utilizadas
-├── images/                        # Imagens do projeto
-├── LICENSE                        # Licença do projeto
-├── README.md                      # Informações do Projeto
-```
+### Funcionalidades Básicas  
+1. **Exibição de Produtos**  
+   - Produtos mockados com:  
+     - Nome.  
+     - Imagem.  
+     - Descrição curta.  
+     - Preço.  
+     - ID único.  
+2. **Detalhes do Produto**  
+   - Página detalhada com:  
+     - Nome, imagem grande, descrição completa e preço.  
+     - Botão para adicionar ao carrinho.  
+3. **Carrinho de Compras**  
+   - Produtos adicionados com:  
+     - Nome, quantidade, preço unitário e subtotal.  
+   - Opções para alterar quantidade ou remover itens.  
+   - Valor total calculado automaticamente.  
 
-### Principais Páginas
-
-- **Home (`index.html`)**: Página inicial com destaques de produtos e formulário para contato.
-- **Contato (`contato.html`)**: Página com história da empresa,imagens,premiações,avaliações e informações.
-- **Filtros Automotivos (`filtros.html`)**: Página dedicada a filtros automotivos.
-- **Frenagem (`frenagem.html`)**: Página com informações sobre peças de frenagem.
-- **Motor (`motor.html`)**: Página com detalhes sobre peças de motor.
-- **Óleos e Lubrificantes (`oleos_lubrificantes.html`)**: Página dedicada a óleos e lubrificantes.
-- **Suspensão (`suspensao.html`)**: Página com informações sobre peças de suspensão.
-- **Acessórios (`acessorios.html`)**: Página dedicada a acessórios automotivos.
-
----
-
-## 💻 Requisitos e Tecnologias
-
-### Tecnologias Utilizadas
-- **HTML5, CSS3, SCSS**: Para estruturação e estilização.
-- **JavaScript**: Para interatividade e funcionalidades dinâmicas.
-- **FontAwesome**: Ícones para melhorar a interface.
-- **jQuery**: Manipulação do DOM e animações leves.
-
-### Requisitos
-- Navegador compatível com padrões modernos (Chrome, Firefox, Edge, etc.).
+### Estilização  
+- **Design Responsivo**: Compatível com dispositivos móveis e desktops.  
+- **Estilo Intuitivo**: Navegação simples e clara.  
 
 ---
 
-## 📄 Licença
-
-Este projeto está licenciado sob a **[Licença MIT](LICENSE)** - sinta-se à vontade para usá-lo e adaptá-lo conforme necessário.
+## 🌟 Diferenciais  
+- **Filtros e Pesquisa**: Filtro por categorias e barra de pesquisa para encontrar produtos.  
+- **Persistência de Dados**: Itens do carrinho salvos no localStorage.  
+- **Animações**: Transições suaves e interações animadas.  
 
 ---
 
-**Equipe FSN5-GRUPO02:**  
-Sally | Gabriel | Caio | Pedro | Nicolas  
-Sempre em busca de inovação e excelência. 🚗✨
+## ⚙️ Como Rodar o Projeto  
+
+1. **Clone o Repositório**  
+   ```bash
+   git clone <URL_DO_REPOSITORIO>
+   cd FSN5-GRUPO02-AUTOPECAS
+   git checkout react-project
