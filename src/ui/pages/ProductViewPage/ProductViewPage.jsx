@@ -5,6 +5,7 @@ import Cards from "@components/Cards/Cards"
 import CarouselMenor from "@components/CarouselMenor/CarouselMenor"
 import sapatoAzul from "@assets/img/sapato_card.png"
 import { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
 import axios from "axios"
 
 function ProductViewPage() {
@@ -33,7 +34,7 @@ function ProductViewPage() {
       <Layout>
         <div className="corpo-product-view">
           <p>
-            Home / Produtos / Acessórios / Faróis de veículos / Jaguar Cars Volvo C70
+            Home / Categorias / Acessórios / Faróis de veículos / Jaguar Cars Volvo C70
           </p>
           <div className="product">
             <div className="carousel-cards-tenis">
@@ -74,32 +75,9 @@ function ProductViewPage() {
                 tempore debitis nostrum expedita corporis corrupti magnam cum
                 distinctio reprehenderit adipisci recusandae?
               </p>
-              {/* <div className="corTamanho">
-                <h6>Tamanho</h6>
-                <div className="escolherTamanhos">
-                  <button className="numeracoesDosProdutos">39</button>
-                  <button className="numeracoesDosProdutos">40</button>
-                  <button className="numeracoesDosProdutos">41</button>
-                  <button className="numeracoesDosProdutos">42</button>
-                  <button className="numeracoesDosProdutos">43</button>
-                </div>
-                <h6>cor</h6>
-                <div className="escolher-cor">
-                  <div className="coresDosProdutos">
-                    <button className="button-selecionar-cor button-cor-1"></button>
-                  </div>
-                  <div className="coresDosProdutos">
-                    <button className="button-selecionar-cor button-cor-2"></button>
-                  </div>
-                  <div className="coresDosProdutos">
-                    <button className="button-selecionar-cor button-cor-3"></button>
-                  </div>
-                  <div className="coresDosProdutos">
-                    <button className="button-selecionar-cor button-cor-4"></button>
-                  </div>
-                </div>
-              </div> */}
-              <button className="botaoCompraProductView">Comprar</button>
+              <button className="botaoCompraProductView">
+                <Link to="/Cart" className="botaoCompraProductView">Comprar</Link>
+              </button>
             </div>
           </div>
         </div>
