@@ -1,0 +1,98 @@
+.cards-de-ofertas {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card-de-oferta-blusa {
+    width: 25.31rem;
+    height: 15.68rem;
+    background-color: #DBE3F2;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+}
+
+.card-de-oferta-blusa .oferta {
+    width: 6rem;
+    height: 2rem;
+    background-color: #E7FF86;
+    border-radius: 1.81rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 0.875rem;
+    font-family: var(--font_primary);
+    font-weight: var(--font_weight_bold);
+    text-align: center;
+}
+
+.card-de-oferta-blusa .oferta h3 {
+    font-size: 0.875rem;
+    align-self: center;
+    text-align: center;
+}
+
+.card-de-oferta-blusa h2 {
+    font-size: 2rem;
+    font-family: var(--font_primary);
+    font-weight: var(--font_weight_bold);  
+}
+
+.card-de-oferta-blusa button {
+    width: 9.56rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background-color: #F5F5F5;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.card-de-oferta-blusa button:hover {
+    background-color: var(--primary);
+}
+
+.card-de-oferta-blusa .button:hover {
+    color: var(--white);
+}
+
+
+.card-de-oferta-blusa .button {
+    width: 10rem;
+    height: 3rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: var(--font_primary);
+    font-weight: var(--font_weight_bold);  
+    color: #C92071;
+    
+
+}
+
+.informacao {
+    width: 12rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-self: center;
+}
+
+.blusa {
+    width: 14rem;
+}
+
+.titulo-colecao {
+    font-size: 1.5rem;
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_bold);
+    color: var(--black);
+    letter-spacing: 0.046875rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+}
