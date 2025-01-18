@@ -1,0 +1,302 @@
+ol, ul {
+    padding-left: 0;
+}
+
+.container-footer {
+    width: 100%;
+    background-color: var(--black);
+}
+
+.rodape {
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 2rem;
+}
+
+.rodape .sobre img {
+    width: 10rem;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.rodape .sobre p {
+    color: var(--white);
+    font-family: var(--font_primaria);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.rodape .icones img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.rodape .informacao {
+    width: 100%;
+    color: var(--white);
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_normal);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5rem;
+    margin-bottom: 2rem;
+}
+
+.rodape .informacao .informacao1 h4 {
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_normal);
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+
+.rodape .informacao .informacao1 li {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.rodape .informacao .informacao1 li a {
+    color: var(--white);
+    text-decoration: none;
+    
+}
+
+.rodape .informacao .informacao2 h4 {
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_normal);
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.rodape .informacao .informacao2 li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+.rodape .informacao .informacao2 li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+#contato {
+    background-color: var(--cor_terciaria);
+}
+
+.contatos {
+    color: var(--white);
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_normal);
+    font-size: 1rem;
+}
+
+.contatos h3 {
+    color: var(--white);
+    font-family: var(--font_primaria);
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.contatos p {
+    color: var(--white);
+    font-family: var(--font_primaria);
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contatos h4 {
+    color: var(--white);
+    font-family: var(--font_primaria);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.barra {
+    height: 0.1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: var(--white);
+    border: none;
+    border-radius: 0.2rem;
+
+}
+
+footer {
+    border: 10px rgb(0, 0, 0) solid;
+    height: 10vh;
+    font-family: var(--font_primaria);
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 1.2rem;
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+    .rodape .sobre img {
+        width: 15rem;
+    }
+
+    .rodape .sobre p {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .rodape .icones img {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .rodape .informacao {
+        justify-content: space-between;
+    }
+
+    .rodape .informacao .informacao1 h4 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .rodape .informacao .informacao1 li {
+        margin-bottom: 1rem;
+    }
+
+    .rodape .informacao .informacao1 li a {
+        font-size: 1.6rem;
+    }
+
+    .rodape .informacao .informacao2 h4 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .rodape .informacao .informacao2 li {
+        margin-bottom: 1rem;
+    }
+
+    .rodape .informacao .informacao2 li a {
+        font-size: 1.6rem;
+    }
+
+    .contatos h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .contatos p {
+        font-size: 1.6rem;
+    }
+
+    .contatos h4 {
+        font-size: 1.6rem;
+    }
+
+    footer {
+        height: 15vh;
+        font-size: 1.5rem;
+        padding-top: 3rem;
+    }
+}
+
+@media (min-width:1024px) {
+    .rodape {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 3rem 5rem 0 5rem;
+    }
+
+    .sobreIcones {
+        width: 30vw;
+        margin-right: 0.5rem;
+    }
+
+    .rodape .sobre img {
+        width: 12rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .icon-img {
+        transition: filter 0.3s ease;
+    }
+
+    .icon-img:hover {
+        filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(0deg) saturate(0%);
+    }
+
+    .rodape .sobre p {
+        width: 70%;
+        line-height: 1.3rem;
+    }
+
+    .rodape .icones img {
+        margin-bottom: 5rem;
+    }
+
+    .rodape .informacao {
+        width: 30vw;
+        justify-content: space-around;
+    }
+
+    .rodape .informacao a {
+        color: var(--white);
+        cursor: pointer;
+        transition: 0.5 ease;
+    }
+
+    .rodape .informacao a:hover {
+        filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(0deg) saturate(0%) !important;
+    }
+
+    .rodape .informacao .informacao1{
+        align-self: left;
+        text-align: left !important;
+    }
+
+    .rodape .informacao .informacao1 h4 {
+        font-size: 1.5rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .rodape .informacao .informacao1 li {
+        margin-bottom: 1rem;
+    }
+
+    .rodape .informacao .informacao2 h4 {
+        font-size: 1.5rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .rodape .informacao .informacao2 li {
+        margin-bottom: 1rem;
+    }
+
+    .contatos {
+        width: 16vw;
+        font-size: 1.5rem;
+    }
+
+    .contatos h3 {
+        font-size: 1.5rem;
+    }
+
+    .contatos p {
+        word-break: break-all;
+    }
+
+    .barra {
+        border-radius: 0.2rem;
+        margin: 0 5rem;
+    }
+}

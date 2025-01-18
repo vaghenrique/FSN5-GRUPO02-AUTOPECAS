@@ -1,0 +1,244 @@
+body {
+    background-color: var(--fundo);
+    position: absolute;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    background: linear-gradient(180deg, rgba(187, 188, 244, 1) 0%, rgba(206, 207, 248, 1) 100%);
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .fotoSapatos img {
+    width: 1rem;
+}
+
+.formulario {
+    background-color: var(--white);
+    width: 84vw;
+    height: 60vh;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario .title {
+    width: auto;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+
+.formulario .title h1 {
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_bold);
+    font-size: 1.375rem;
+}
+
+.formulario .title p {
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_normal);
+    font-size: 0.875rem;
+}
+
+.formulario .title p a {
+    color: var(--black);
+}
+
+.formulario .conta {
+    width: auto;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.formulario .conta h4 {
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_bold);
+    margin-bottom: 1rem;
+    align-self: flex-start;
+}
+
+.formulario .conta input {
+    width: 68vw;
+    height: 8.5vh;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    background-color: var(--light-gray-4);
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    color: var(--dark-gray-3);
+    margin-bottom: 2rem;
+}
+
+.formulario .conta button {
+    width: 68vw;
+    height: 7vh;
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_bold);
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    background-color: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.formulario .conta button:hover {
+    background-color: var(--tertiary) !important;
+    color: var(--white) !important;
+}
+
+.formulario .conta a {
+    color: var(--black);
+    font-family: var(--font_primaria);
+    font-size: var(--font_weight_normal);
+    margin-bottom: 2rem;
+}
+
+.formulario .outrologin {
+    width: auto;
+    height: 15vh;
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_bold);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.3rem;
+}
+
+.formulario .outrologin .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.formulario .outrologin .img img {
+    width: 2rem;
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+    .formulario {
+        height: 70vh;
+    }
+
+    .formulario .title {
+        padding: 2rem;
+    }
+
+    .formulario .title h1 {
+        font-size: 2rem;
+    }
+
+    .formulario .title p {
+        font-size: 1.4rem;
+    }
+
+    .formulario .conta h4 {
+        margin-bottom: 2rem;
+    }
+
+    .formulario .conta button {
+        font-size: 1.4rem;
+        border-radius: 0.4rem;
+    }
+
+    .formulario .outrologin {
+        font-size: 1.6rem;
+        justify-content: space-around;
+    }
+
+    .formulario .outrologin .img img {
+        width: 3.5rem;
+    }
+}
+
+@media (min-width:1024px) {
+    main {
+        height: 90vh;
+        padding: 5rem;
+    }
+
+    main .fotoSapatos img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .formulario {
+        width: 40vw;
+        height: 65vh;
+        align-self: flex-start;
+        padding: 0 1.5rem;
+    }
+
+    .formulario .title {
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 1.5rem;
+    }
+
+    .formulario .title h1 {
+        font-size: 1.8rem;
+        padding-bottom: 1rem;
+    }
+
+    .formulario .title p {
+        font-size: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .formulario .conta {
+        width: 100%;
+        height: 40vh;
+        align-items: flex-start;
+    }
+
+    .formulario .conta h4 {
+        margin-bottom: 0.3rem;
+    }
+
+    .formulario .conta input {
+        width: 100%;
+        height: 7vh;
+        padding-left: 1.5rem;
+        margin-bottom: 1.5rem;
+        align-self: center;
+    }
+
+    .formulario .conta button {
+        width: 100%;
+        height: 7vh;
+        align-self: center;
+    }
+
+    .formulario .outrologin {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.3rem;
+    }
+}

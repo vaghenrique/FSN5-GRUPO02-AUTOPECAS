@@ -1,0 +1,41 @@
+.cart-summary {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  
+  .cart-summary h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .summary-details p {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  .total-price {
+    color: #ff0000;
+    font-weight: bold;
+  }
+  
+  .installments {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .continue-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffa500;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  

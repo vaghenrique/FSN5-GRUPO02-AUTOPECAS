@@ -1,85 +1,191 @@
-# Projeto Integrador - Desenvolvimento de um Site de Vendas Utilizando React 🚀  
+# Guia de Estrutura do Projeto
 
-Este projeto é um e-commerce funcional e dinâmico, desenvolvido como parte do **Projeto Integrador** do curso. O objetivo é aplicar boas práticas de desenvolvimento com React, incluindo componentização, gerenciamento de estado, roteamento e estilização responsiva.  
+## Estrutura do Projeto
 
-## 🎯 Objetivo  
-Criar uma aplicação escalável e moderna que simule uma plataforma de vendas online, com páginas principais, funcionalidades básicas e extras para enriquecer a experiência do usuário.  
+```plaintext
+src/
+|-- assets/
+|   |-- favicon/
+|   |-- img/
+|-- ui/
+|   |-- Components/
+|   |   |-- CardDestaque/
+|   |   |-- Cards/
+|   |   |-- Carousel/
+|   |   |-- CarouselMenor/
+|   |   |-- Destaque/
+|   |   |-- Footer/
+|   |   |-- Header/
+|   |   |-- HeaderMenor/
+|   |   |-- IconDestaque/
+|   |   |-- Main/
+|   |-- pages/
+|   |   |-- CartPage/
+|   |   |-- ConfirmarCompraPage/
+|   |   |-- CriarContaPage/
+|   |   |-- CriarFormularioPage/
+|   |   |-- Error404/
+|   |   |-- HomePage/
+|   |   |-- InformacoesPage/
+|   |   |-- LoginPage/
+|   |   |-- PaginaDeSucessoPage/
+|   |   |-- PedidosPage/
+|   |   |-- ProductListingPage/
+|   |   |-- ProductViewPage/
+|-- styles
+|-- App.css
+|-- App.jsx
+|-- main.jsx
+```
 
-## 🛠️ Tecnologias Utilizadas  
-- **React**  
-- **Vite 6.1.1**  
-- **React Router**  
-- **React Context API** (ou Redux)  
-- **CSS Modules** (ou outra biblioteca de estilização como Styled Components)  
+## Componentes
 
----
+- **CardDestaque**: Exibe cartões de destaque na página principal.
+- **Cards**: Exibe cartões genéricos de produtos.
+- **Carousel**: Exibe um carrossel de imagens para destaque de produtos.
+- **CarouselMenor**: Exibe um carrossel menor para destaque adicional.
+- **Destaque**: Exibe seções de destaque no site.
+- **Footer**: Componente de rodapé com informações de contato e links úteis.
+- **Header**: Componente de cabeçalho com navegação principal.
+- **HeaderMenor**: Variante menor do componente de cabeçalho.
+- **IconDestaque**: Exibe ícones de destaque.
+- **Layout**: Componente principal que envolve o conteúdo da página.
 
-## 📋 Requisitos e Funcionalidades Implementadas  
+## Páginas
 
-### Estrutura e Layout Geral  
-- **Layout Responsivo e Amigável**  
-- **3 Páginas Principais**:  
-  - **Página Inicial**: Vitrine de produtos.  
-  - **Detalhes do Produto**: Informações detalhadas de cada produto.  
-  - **Carrinho de Compras**: Gerenciamento de itens adicionados.  
+- **CartPage**: Página do carrinho de compras.
+- **ConfirmarCompraPage**: Página de confirmação de compra.
+- **CriarContaPage**: Página para criação de nova conta de usuário.
+- **CriarFormularioPage**: Página para criação de formulários personalizados.
+- **Error404**: Página de erro para rotas não encontradas.
+- **HomePage**: Página inicial com produtos e ofertas principais.
+- **InformacoesPage**: Página de informações gerais.
+- **LoginPage**: Página de login para usuários.
+- **PaginaDeSucessoPage**: Página pós-compra bem-sucedida.
+- **PedidosPage**: Página com histórico de pedidos do usuário.
+- **ProductListingPage**: Página de listagem de produtos.
+- **ProductViewPage**: Página de visualização detalhada de um produto.
 
-### Componentização e Reutilização  
-- **Componentes Reutilizáveis**:  
-  - Cabeçalho com navegação.  
-  - Rodapé com informações do site.  
-  - Cartões de produtos (na vitrine e no carrinho).  
-  - Botões personalizados.  
+## Bibliotecas Utilizadas
 
-### Gerenciamento de Estados  
-- **Context API** ou Redux para estados globais:  
-  - Lista de produtos no carrinho.  
-  - Quantidade total de itens.  
-  - Preço total do carrinho.  
-- **Ações Disponíveis**:  
-  - Adicionar/Remover produtos do carrinho.  
-  - Alterar a quantidade de produtos no carrinho.  
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **axios**: Biblioteca para realizar requisições HTTP.
+- **Alias** : Biblioteca para organizar imports.
+- **Bootstrap**: Framework CSS para design responsivo e componentes pré-estilizados.
+- **React Router**: Biblioteca para gerenciamento de rotas no React.
 
-### Roteamento  
-- **React Router** para navegação:  
-  - `/`: Página inicial.  
-  - `/produto/:id`: Detalhes do produto.  
-  - `/carrinho`: Carrinho de compras.  
+## Como Utilizar
 
-### Funcionalidades Básicas  
-1. **Exibição de Produtos**  
-   - Produtos mockados com:  
-     - Nome.  
-     - Imagem.  
-     - Descrição curta.  
-     - Preço.  
-     - ID único.  
-2. **Detalhes do Produto**  
-   - Página detalhada com:  
-     - Nome, imagem grande, descrição completa e preço.  
-     - Botão para adicionar ao carrinho.  
-3. **Carrinho de Compras**  
-   - Produtos adicionados com:  
-     - Nome, quantidade, preço unitário e subtotal.  
-   - Opções para alterar quantidade ou remover itens.  
-   - Valor total calculado automaticamente.  
+### Iniciando o Projeto
 
-### Estilização  
-- **Design Responsivo**: Compatível com dispositivos móveis e desktops.  
-- **Estilo Intuitivo**: Navegação simples e clara.  
+1. **Instale as dependências**:
+    ```bash
+    npm install
+    ```
 
----
+2. **Inicie o servidor de desenvolvimento**:
+    ```bash
+    npm run dev
+    ```
 
-## 🌟 Diferenciais  
-- **Filtros e Pesquisa**: Filtro por categorias e barra de pesquisa para encontrar produtos.  
-- **Persistência de Dados**: Itens do carrinho salvos no localStorage.  
-- **Animações**: Transições suaves e interações animadas.  
+### Utilização de Componentes
 
----
+Os componentes estão localizados na pasta `src/ui/Components`. Você pode importá-los e usá-los nas suas páginas conforme necessário!
 
-## ⚙️ Como Rodar o Projeto  
+```jsx
+import React from 'react';
+import Header from '@components/Header/Header.jsx'
+import Footer from '@components/Footer/Footer.jsx'
 
-1. **Clone o Repositório**  
-   ```bash
-   git clone <URL_DO_REPOSITORIO>
-   cd FSN5-GRUPO02-AUTOPECAS
-   git checkout react-project
+
+const Layout = ({ children }) => {
+  return (
+    <div>
+      <Header />
+      {children}
+      <Footer />
+    </div>
+  );
+};
+
+export default Layout;
+```
+
+### Utilização de Páginas
+
+As páginas estão localizadas na pasta `src/ui/pages`. Utilize React Router para configurar as rotas do seu aplicativo.
+
+```jsx
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import HomePage from '@pages/HomePage/HomePage';
+import ProductListingPage from '@pages/ProductListingPage/ProductListingPage';
+import ProductViewPage from '@pages/ProductViewPage/ProductViewPage';
+import Error404 from '@pages/Error404/Error404';
+
+const App = () => (
+  <Router>
+    <Switch>
+      <Route exact path="/" component={HomePage} />
+      <Route path="/products" component={ProductListingPage} />
+      <Route path="/product/:id" component={ProductViewPage} />
+      <Route component={Error404} />
+    </Switch>
+  </Router>
+);
+
+export default App;
+```
+
+### Utilização de `axios`
+
+Utilize `axios` para fazer requisições HTTP em seus componentes.
+
+```jsx
+import axios from 'axios';
+import React, { useState, useEffect } from 'react';
+
+const HomePage = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios.get('https://api.exemplo.com/produtos');
+      setProducts(result.data);
+    };
+
+    fetchData();
+  }, []);
+
+  return (
+    <div>
+      {products.map(product => (
+        <div key={product.id}>{product.name}</div>
+      ))}
+    </div>
+  );
+};
+
+export default HomePage;
+```
+
+### Utilização de Bootstrap
+
+Adicione estilos e componentes do Bootstrap ao seu projeto.
+
+```jsx
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
+const Carousel = () => (
+  <div id="carouselExample" className="carousel slide" data-ride="carousel">
+    {/* Carrossel conteúdo */}
+  </div>
+);
+
+export default Carousel;
+```
+
+## Conclusão
+
+Este guia fornece uma visão geral da estrutura do projeto, descreve os componentes e páginas, e explica como utilizar bibliotecas como `axios`, Bootstrap e React Router.
+```
