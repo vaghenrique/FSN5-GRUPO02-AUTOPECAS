@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
+  base: '/FSN5-GRUPO02-AUTOPECAS/',
   plugins: [react()],
   resolve: {
     alias: {
