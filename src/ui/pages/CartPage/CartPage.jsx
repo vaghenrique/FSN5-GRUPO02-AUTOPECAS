@@ -14,9 +14,9 @@ function CartItem() {
       <div className="item-details">
         <img src={sapatoAzul} alt="Tênis Nike Revolution 6 Next Nature Masculino" />
         <div className="item-info">
-          <h2>Tênis Nike Revolution 6 Next Nature Masculino</h2>
-          <p>Cor: Vermelho / Branco</p>
-          <p>Tamanho: 42</p>
+          <h2>Farol Jaguar Cars Volvo C70</h2>
+          <p>Cor: Preto </p>
+          <p>Tamanho: 13cm x 11,5cm</p>
         </div>
       </div>
       <div className="item-quantity">
@@ -28,8 +28,8 @@ function CartItem() {
         <a href="#" className="remove-item">Remover item</a>
       </div>
       <div className="item-pricing">
-        <p className="original-price">R$ 219,00</p>
-        <p className="discounted-price">R$ 219,00</p>
+        <p className="original-price">R$ 919,90</p>
+        <p className="discounted-price">R$ 719,00</p>
       </div>
     </div>
   );
@@ -40,12 +40,14 @@ function CartSummary() {
     <div className="cart-summary">
       <h2>RESUMO</h2>
       <div className="summary-details">
-        <p>Subtotal: <span>R$ 219,00</span></p>
+        <p>Subtotal: <span>R$ 919,00</span></p>
         <p>Frete: <span>R$ 0,00</span></p>
-        <p>Desconto: <span>R$ 30,00</span></p>
-        <p>Total: <span className="total-price">R$ 219,00</span></p>
-        <p className="installments">ou 10x de R$ 21,00 sem juros</p>
-        <button className="continue-button">Continuar</button>
+        <p>Desconto: <span>R$ 200,90</span></p>
+        <p>Total: <span className="total-price">R$ 719,00</span></p>
+        <p className="installments">ou 10x de R$ 71,90 sem juros</p>
+              <button className="continue-button">
+                <Link to="/Login" className="continue-button">Continuar</Link>
+              </button>
       </div>
     </div>
   );

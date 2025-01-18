@@ -1,9 +1,9 @@
 import "@styles/Components/IconDestaque/IconDestaque.css"
-import camisa from '@assets/img/blusa_destaque.svg'
-import calca from '@assets/img/calca_destaque.svg'
-import bone from '@assets/img/bone_destaque.svg'
-import headphone from '@assets/img/fone_destaque.svg'
-import tenis from '@assets/img/sapato_destaque.svg'
+import car from '@assets/img/car.svg'
+import moto from '@assets/img/moto.svg'
+import acess from '@assets/img/acess.svg'
+import bateria from '@assets/img/bateria.svg'
+import user from '@assets/img/user.svg'
 import { Link } from "react-router-dom";
 
 function IconDestaque() {
@@ -13,28 +13,28 @@ function IconDestaque() {
       <section className="colecao-destaque-icons">
         <div className="colecao-destaque-icons-escopo">
           <div className="titulo-colecao-destaque">
-            <h1>Coleções em destaque</h1>
+            <h1>Menu em destaque</h1>
           </div>
           <div className="cards-colecao-destaque">
             <div className="bola-destaque">
-              <Link to="/ProductList"><img className="color-hover" src={camisa} alt="blusa"/></Link>
-              <h4>Camisetas</h4>
+              <Link to="/ProductList"><img className="color-hover" src={car} alt="carro"/></Link>
+              <h4>Carros</h4>
             </div>
             <div className="bola-destaque">
-              <Link to="/ProductList"><img className="color-hover" src={calca} alt="blusa"/></Link>
-              <h4>Calças</h4>
+              <Link to="/ProductList"><img className="color-hover" src={moto} alt="moto"/></Link>
+              <h4>Motos</h4>
             </div>
             <div className="bola-destaque">
-              <Link to="/ProductList"><img className="color-hover" src={bone} alt="blusa"/></Link>
-              <h4>Bonés</h4>
+              <Link to="/ProductList"><img className="color-hover" src={acess} alt="acessorio"/></Link>
+              <h4>Acessórios</h4>
             </div>
             <div className="bola-destaque">
-              <Link to="/ProductList"><img className="color-hover" src={headphone} alt="blusa"/></Link>
-              <h4>Headphones</h4>
+              <Link to="/ProductList"><img className="color-hover" src={bateria} alt="bateria"/></Link>
+              <h4>Baterias</h4>
             </div>
             <div className="bola-destaque">
-              <Link to="/ProductList"><img className="color-hover" src={tenis} alt="blusa"/></Link>
-              <h4>Tênis</h4>
+              <Link to="/Login"><img className="color-hover" src={user} alt="perfil"/></Link>
+              <h4>Perfil</h4>
             </div>
           </div>
         </div>
