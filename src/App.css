@@ -1,4 +1,38 @@
-#root {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --font_primaria: "Inter", sans-serif;
+  --font_weight_normal: 400;
+  --font_weight_bold: 700;
+  --font_weight_extra_bold: 900;
+
+  --primary: #c92071;
+  --secondary: #b5b6f2;
+  --tertiary: #991956;
+  --error: #ee4266;
+  --success: #52ca76;
+  --warning: #f6aa1c;
+  --verde_off: #e7ff86;
+
+  --dark-gray: #1f1f1f;
+  --dark-gray-2: #474747;
+  --dark-gray-3: #666666;
+  --light-gray: #8f8f8f;
+  --light-gray-2: #cccccc;
+  --light-gray-3: #f5f5f5;
+  --light-gray-4: #f8f8f8;
+  --white: #ffffff;
+  --black: #000000;
+  --fundo: #f9f8fe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +73,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */
