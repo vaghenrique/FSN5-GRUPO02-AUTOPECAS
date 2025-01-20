@@ -18,9 +18,9 @@ function Footer() {
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
               </div> */}
               <div className="icones">
-                <a href="https://www.facebook.com/digitalcollegebr/"><img className="icon-img" src={iconFacebook} alt="facebook" /></a>
-                <a href="https://www.instagram.com/digitalcollegebr/"><img className="icon-img" src={iconInstagram} alt="instagram" /></a>
-                <a href="https://x.com/eaicollegers"><img className="icon-img" src={iconTwitter} alt="twitter" /></a>
+                <a href="https://www.facebook.com/" target="_blank"><img className="icon-img" src={iconFacebook} alt="facebook" /></a>
+                <a href="https://www.instagram.com/" target="_blank"><img className="icon-img" src={iconInstagram} alt="instagram" /></a>
+                <a href="https://x.com/" target="_blank"><img className="icon-img" src={iconTwitter} alt="twitter" /></a>
               </div>
             </div>
             <div className="informacao">
