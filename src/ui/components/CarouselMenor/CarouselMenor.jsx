@@ -7,7 +7,7 @@ function CarouselMenor() {
   return (
     <>
 
-      <div id="carouselExampleDark" className="carousel carousel-product-view carousel-dark slide">
+      <div id="carouselExampleDark" className="carousel carousel-product-view carousel-dark slide" data-bs-wrap="true" data-bs-ride="carousel">
         <div className="carousel-indicators carousel-indicators-product-view">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active"
             aria-current="true" aria-label="Slide 1"></button>
