@@ -17,7 +17,7 @@ function CardDestaque() {
                             </div>
                             <h2>Motor <br /> automotivo</h2>
                             <button>
-                                <a className="button" href="">Comprar</a>
+                                <a className="button" href="/ProductList">Comprar</a>
                             </button>
                         </div>
                         <div className="blusa-card">
@@ -31,7 +31,7 @@ function CardDestaque() {
                             </div>
                             <h2>Novos <br /> Pistões</h2>
                             <button>
-                                <a className="button" href="">Comprar</a>
+                                <a className="button" href="/ProductList">Comprar</a>
                             </button>
                         </div>
                         <div className="blusa-card">
@@ -45,7 +45,7 @@ function CardDestaque() {
                             </div>
                             <h2>Filtros <br />resistentes</h2>
                             <button>
-                                <a className="button" href="">Comprar</a>
+                                <a className="button" href="/ProductList">Comprar</a>
                             </button>
                         </div>
                         <div className="blusa-card">
