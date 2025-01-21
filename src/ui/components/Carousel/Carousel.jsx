@@ -14,7 +14,7 @@ function Carousel() {
   return (
     <>
 
-      <div id="carouselExampleDark" className="carousel carousel-dark slide">
+      <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-wrap="true" data-bs-ride="carousel">
         <div className="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -26,15 +26,14 @@ function Carousel() {
             aria-label="Slide 4"></button>
         </div>
         <div className="carousel-inner">
-          <div className="carousel-item active" data-bs-interval="10000">
+          <div className="carousel-item active" data-bs-interval="5000">
             <div className="carousel-item-row">
               <div className="hero">
                 <div className="texto-ofertas">
                   <h6 className="sub-titulo">Melhores ofertas personalizadas</h6>
                   <h1 className="titulo">Queima de estoque Olimpo Peças <img src={fire} alt="fire" /></h1>
                   <p className="texto">
-                    Consequat culpa exercitation mollit nisi excepteur do do
-                    tempor laboris eiusmod irure consectetur.
+                  Queima de Estoque Olimpo Peças! Descontos incríveis em autopeças para todos os modelos – é a chance perfeita de equipar seu carro e economizar!
                   </p>
                   <button className="oferta"><Link to="/ProductList">Ver Ofertas</Link></button>
                 </div>
@@ -52,8 +51,7 @@ function Carousel() {
                   <h6 className="sub-titulo">Melhores ofertas personalizadas</h6>
                   <h1 className="titulo">Queima de estoque Olimpo Peças<img src={fire} alt="fire" /></h1>
                   <p className="texto">
-                    Consequat culpa exercitation mollit nisi excepteur do do
-                    tempor laboris eiusmod irure consectetur.
+                  Queima de Estoque Olimpo Peças! Descontos incríveis em autopeças para todos os modelos – é a chance perfeita de equipar seu carro e economizar!
                   </p>
                   <button className="oferta"><Link to="/ProductList">Ver Ofertas</Link></button>
                 </div>
@@ -71,8 +69,7 @@ function Carousel() {
                   <h6 className="sub-titulo">Melhores ofertas personalizadas</h6>
                   <h1 className="titulo">Queima de estoque Olimpo Peças<img src={fire} alt="fire" /></h1>
                   <p className="texto">
-                    Consequat culpa exercitation mollit nisi excepteur do do
-                    tempor laboris eiusmod irure consectetur.
+                  Queima de Estoque Olimpo Peças! Descontos incríveis em autopeças para todos os modelos – é a chance perfeita de equipar seu carro e economizar!
                   </p>
                   <button className="oferta"><Link to="/ProductList">Ver Ofertas</Link></button>
                 </div>
@@ -90,8 +87,7 @@ function Carousel() {
                   <h6 className="sub-titulo">Melhores ofertas personalizadas</h6>
                   <h1 className="titulo">Queima de estoque Olimpo Peças<img src={fire} alt="fire" /></h1>
                   <p className="texto">
-                    Consequat culpa exercitation mollit nisi excepteur do do
-                    tempor laboris eiusmod irure consectetur.
+                  Queima de Estoque Olimpo Peças! Descontos incríveis em autopeças para todos os modelos – é a chance perfeita de equipar seu carro e economizar!
                   </p>
                   <button className="oferta"><Link to="/ProductList">Ver Ofertas</Link></button>
                 </div>
