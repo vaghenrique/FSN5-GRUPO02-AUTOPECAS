@@ -11,7 +11,7 @@ function Header() {
         <nav>
           <div className="navs">
             <div className="nav-header">
-              {/* <Link to="/"><img src={logo} alt="logo" /></Link> */}
+               <Link to="/"><img src={logo} alt="logo" /></Link> 
               <input type="text" placeholder="Pesquisar produto..." className="input-icon-search" />
               <Link className="link-cadastro" to="/Registrar">Cadastre-se</Link>
               <button type="button"><Link to="/Login">Entrar</Link></button>

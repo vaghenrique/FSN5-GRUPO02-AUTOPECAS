@@ -13,10 +13,10 @@ function Footer() {
         <section id="contato">
           <div className="rodape">
             <div className="sobreIcones">
-              {/* <div className="sobre">
+               <div className="sobre">
                 <Link className="logo-footer" to="/"><img className="icon-img" src={logoDigitalCollege} alt="imagemlogo" /></Link>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-              </div> */}
+                <p>As melhores peças automotivas para o seu veículo. Qualidade e confiança em um só lugar.</p>
+              </div> 
               <div className="icones">
                 <a href="https://www.facebook.com/" target="_blank"><img className="icon-img" src={iconFacebook} alt="facebook" /></a>
                 <a href="https://www.instagram.com/" target="_blank"><img className="icon-img" src={iconInstagram} alt="instagram" /></a>
