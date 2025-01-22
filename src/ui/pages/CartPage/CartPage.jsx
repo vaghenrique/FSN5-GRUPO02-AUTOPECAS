@@ -16,10 +16,14 @@ function CartItem({ item, updateQuantity, removeItem }) {
     <div className="cart-item">
       <div className="item-details">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <img src={sapatoAzul} alt={item.titulo} />
 =======
         <img src={sapatoAzul} alt="Farol Jaguar Cars Volvo C70" />
 >>>>>>> a83eb4f (Add novo design ao site!)
+=======
+        <img src={sapatoAzul} alt={item.titulo} />
+>>>>>>> 8d0dc2c (carrinho)
         <div className="item-info">
           <h2>{item.titulo}</h2>
           <p>Cor: {item.cor}</p>
