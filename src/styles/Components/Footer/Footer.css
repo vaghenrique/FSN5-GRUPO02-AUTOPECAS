@@ -1,3 +1,24 @@
+.rodape .informacao ul {
+    padding-left: 0; 
+    margin: 0; 
+    align-items: flex-start;
+}
+
+.rodape .informacao ul li {
+    list-style: none; 
+    text-align: left; 
+    align-items: flex-start;
+}
+
+.rodape .sobre {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    margin-bottom: 1rem; 
+}
+
 ol, ul {
     padding-left: 0;
 }
@@ -19,7 +40,7 @@ ol, ul {
 .rodape .sobre img {
     width: 10rem;
     display: flex;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
 }
 
 .rodape .sobre p {
@@ -45,7 +66,7 @@ ol, ul {
     flex-direction: row;
     justify-content: flex-start;
     gap: 5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 10rem;
 }
 
 .rodape .informacao .informacao1 h4 {
