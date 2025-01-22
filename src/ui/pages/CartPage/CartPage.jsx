@@ -17,11 +17,14 @@ function CartItem({ item, updateQuantity, removeItem }) {
       <div className="item-details">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <img src={sapatoAzul} alt="Farol Jaguar Cars Volvo C70" />
 =======
         <img src={sapatoAzul} alt={item.titulo} />
 >>>>>>> dev-nicolas
 =======
+=======
+>>>>>>> 73d02af (carrinho)
         <img src={sapatoAzul} alt={item.titulo} />
 =======
 <<<<<<< HEAD
@@ -37,7 +40,13 @@ function CartItem({ item, updateQuantity, removeItem }) {
 >>>>>>> a83eb4f (Add novo design ao site!)
 >>>>>>> 7eeae0e (Add novo design ao site!)
 >>>>>>> f845fc5 (Add novo design ao site!)
+<<<<<<< HEAD
 >>>>>>> 395b244 (Add novo design ao site!)
+=======
+=======
+        <img src={sapatoAzul} alt={item.titulo} />
+>>>>>>> 5395405 (carrinho)
+>>>>>>> 73d02af (carrinho)
         <div className="item-info">
           <h2>{item.titulo}</h2>
           <p>Cor: {item.cor}</p>
