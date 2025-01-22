@@ -8,53 +8,90 @@ import flechaRosa from "@assets/img/flecha_icon.svg";
 import { Link } from "react-router-dom";
 import "@styles/pages/Cartpage/Cartpage.css";
 
-function CartItem() {
+
+function CartItem({ item, updateQuantity, removeItem }) {
+  const price = isNaN(item.valoratual) ? 0 : parseFloat(item.valoratual);
+
   return (
     <div className="cart-item">
       <div className="item-details">
-        <img src={sapatoAzul} alt="Tênis Nike Revolution 6 Next Nature Masculino" />
+        <img src={sapatoAzul} alt={item.titulo} />
         <div className="item-info">
-          <h2>Farol Jaguar Cars Volvo C70</h2>
-          <p>Cor: Preto </p>
-          <p>Tamanho: 13cm x 11,5cm</p>
+          <h2>{item.titulo}</h2>
+          <p>Cor: {item.cor}</p>
+          <p>Tamanho: {item.tamanho}</p>
         </div>
       </div>
       <div className="item-quantity">
         <div>
-          <button>-</button>
-          <span>1</span>
-          <button>+</button>
+          <button onClick={() => updateQuantity(item, -1)}>−</button>
+          <span>{item.quantity}</span>
+          <button onClick={() => updateQuantity(item, 1)}>+</button>
         </div>
-        <a href="#" className="remove-item">Remover item</a>
+        <a href="#" className="remove-item" onClick={() => removeItem(item.id)}>Remover item</a>
       </div>
       <div className="item-pricing">
-        <p className="original-price">R$ 919,90</p>
-        <p className="discounted-price">R$ 719,00</p>
+        <p className="original-price">R$ {item.valorantigo}</p>
+        <p className="discounted-price">
+          R$ {(price * item.quantity).toFixed(2)}
+        </p>
       </div>
     </div>
   );
 }
 
-function CartSummary() {
+
+const updateQuantity = (item, delta, cartItems, setCartItems) => {
+  if (item.quantity + delta >= 1) {
+    const updatedItems = cartItems.map((cartItem) =>
+      cartItem.id === item.id
+        ? { ...cartItem, quantity: cartItem.quantity + delta }
+        : cartItem
+    );
+    setCartItems(updatedItems);
+    localStorage.setItem("cart", JSON.stringify(updatedItems));
+  }
+};
+
+
+const removeItem = (itemId, cartItems, setCartItems) => {
+  const updatedItems = cartItems.filter((cartItem) => cartItem.id !== itemId);
+  setCartItems(updatedItems);
+  localStorage.setItem("cart", JSON.stringify(updatedItems));
+};
+
+function CartSummary({ cartItems }) {
+  const total = cartItems.reduce((acc, item) => {
+    const price = isNaN(item.valoratual) ? 0 : parseFloat(item.valoratual);
+    return acc + price * item.quantity;
+  }, 0);
+
   return (
     <div className="cart-summary">
       <h2>RESUMO</h2>
       <div className="summary-details">
-        <p>Subtotal: <span>R$ 919,00</span></p>
+        <p>Subtotal: <span>R$ {total.toFixed(2)}</span></p>
         <p>Frete: <span>R$ 0,00</span></p>
-        <p>Desconto: <span>R$ 200,90</span></p>
-        <p>Total: <span className="total-price">R$ 719,00</span></p>
-        <p className="installments">ou 10x de R$ 71,90 sem juros</p>
-              <button className="continue-button">
-                <Link to="/Login" className="continue-button">Continuar</Link>
-              </button>
+        <p>Desconto: <span>R$ 200,00</span></p>
+        <p>Total: <span className="total-price">R$ {total.toFixed(2)}</span></p>
+        <p className="installments">ou 10x de R$ {(total / 10).toFixed(2)} sem juros</p>
+        <button className="continue-button">
+          <Link to="/Login" className="continue-button">Continuar</Link>
+        </button>
       </div>
     </div>
   );
 }
 
+
 function CartPage() {
-  const [character, setCharacter] = useState([]);
+  const [cartItems, setCartItems] = useState([]);
+  const [character, setCharacter] = useState([]); // Definindo o estado para armazenar os produtos
+
+  useEffect(() => {
+    const savedCart = JSON.parse(localStorage.getItem("cart") || "[]");
+    setCartItems(savedCart);
+  }, []);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -63,7 +100,7 @@ function CartPage() {
         setCharacter(response.data);
         console.log("API response:", response.data);
       } catch (error) {
-        console.log(`o erro foi ${error}`);
+        console.log('Erro: ${error}');
       }
     };
     fetchData();
@@ -79,7 +116,14 @@ function CartPage() {
             <h2>UNITÁRIO</h2>
             <h2>TOTAL</h2>
           </div>
-          <CartItem />
+          {cartItems.map((item) => (
+            <CartItem
+              key={item.id}
+              item={item}
+              updateQuantity={(item, delta) => updateQuantity(item, delta, cartItems, setCartItems)}
+              removeItem={(itemId) => removeItem(itemId, cartItems, setCartItems)}
+            />
+          ))}
           <section className="discount-shipping">
             <div className="discount">
               <strong>Calcular desconto</strong>
@@ -93,7 +137,7 @@ function CartPage() {
             </div>
           </section>
         </div>
-        <CartSummary />
+        <CartSummary cartItems={cartItems} />
       </div>
       <section className="container-produtos-em-alta">
         <div className="produtos-em-alta">
