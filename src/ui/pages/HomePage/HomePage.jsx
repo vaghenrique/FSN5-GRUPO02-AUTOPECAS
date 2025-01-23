@@ -53,7 +53,7 @@ const Home = () => {
           <div className="produto-em-alta-cards">
             {Array.isArray(character) &&
               character
-                .slice(0, 8)
+                .slice(0, 12)
                 .map((card) =>
                   card.desconto === true ? (
                     <Cards2

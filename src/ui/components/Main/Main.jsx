@@ -1,7 +1,7 @@
 // src/ui/Components/Main/Main.jsx
 import "@styles/Components/Main/Main.css";
 import { Link } from "react-router-dom";
-import sapatos from "@assets/img/dois_tenis_nike.png";
+import logo from "@assets/img/logomain.png";
 import gmail from "@assets/img/gmail.svg";
 import facebook from "@assets/img/facebook.svg";
 
@@ -42,7 +42,7 @@ function Main() {
         </div>
       </div>
       <div className="fotoSapatos">
-        <img src={sapatos} alt="Dois Tênis Nike" />
+        <img src={logo} alt="Logo Olimpo" />
       </div>
     </main>
   );
