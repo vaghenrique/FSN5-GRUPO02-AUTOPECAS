@@ -1,5 +1,5 @@
 import "@styles/Components/Footer/Footer.css";
-import logoDigitalCollege from '@assets/img/logoDigitalCollege.svg';
+import logo from '@assets/img/logofooter.png';
 import iconFacebook from '@assets/img/iconFacebook.svg';
 import iconInstagram from '@assets/img/iconInstagram.svg';
 import iconTwitter from '@assets/img/iconTwitter.svg';
@@ -14,7 +14,7 @@ function Footer() {
           <div className="rodape">
             <div className="sobreIcones">
                <div className="sobre">
-                <Link className="logo-footer" to="/"><img className="icon-img" src={logoDigitalCollege} alt="imagemlogo" /></Link>
+                <Link className="logo-footer" to="/"><img className="logo-olimpo" src={logo} alt="imagemlogo" /></Link>
                 <p>As melhores peças automotivas para o seu veículo. Qualidade e confiança em um só lugar.</p>
               </div> 
               <div className="icones">
