@@ -12,7 +12,7 @@ function CartItem() {
   return (
     <div className="cart-item">
       <div className="item-details">
-        <img src={sapatoAzul} alt="Tênis Nike Revolution 6 Next Nature Masculino" />
+        <img src={sapatoAzul} alt="Farol Jaguar Cars Volvo C70" />
         <div className="item-info">
           <h2>Farol Jaguar Cars Volvo C70</h2>
           <p>Cor: Preto </p>

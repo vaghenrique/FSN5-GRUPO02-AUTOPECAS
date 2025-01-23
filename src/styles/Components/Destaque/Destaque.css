@@ -26,7 +26,7 @@
 }
 
 .texto1 {
-    color: #C92071;
+    color: #f6aa1c;
     font-weight: 600;
     font-family: "Inter";
 }
@@ -39,7 +39,7 @@
 
 .element a {
     width: 200px;
-    background-color: #C92071;
+    background-color: #f6aa1c;
     color: #FFFFFF;
     text-decoration: none;
     padding: 10px 30px;
