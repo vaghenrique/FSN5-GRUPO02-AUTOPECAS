@@ -13,9 +13,9 @@
 .rodape .sobre {
     display: flex;
     flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    text-align: center; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    text-align: left; 
     margin-bottom: 1rem; 
 }
 
@@ -31,10 +31,7 @@ ol, ul {
 .rodape {
     background-color: var(--black);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 3rem 2rem;
+    
 }
 
 .rodape .sobre img {
@@ -239,7 +236,7 @@ footer {
     }
 
     .sobreIcones {
-        width: 30vw;
+        width: 28vw;
         margin-right: 0.5rem;
     }
 
@@ -261,10 +258,7 @@ footer {
         line-height: 1.3rem;
     }
 
-    .rodape .icones img {
-        margin-bottom: 5rem;
-    }
-
+    
     .rodape .informacao {
         width: 30vw;
         justify-content: space-around;
