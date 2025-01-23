@@ -15,11 +15,10 @@ function CartItem({ item, updateQuantity, removeItem }) {
   return (
     <div className="cart-item">
       <div className="item-details">
-<<<<<<< HEAD
-        <img src={sapatoAzul} alt="Farol Jaguar Cars Volvo C70" />
-=======
+
+
         <img src={sapatoAzul} alt={item.titulo} />
->>>>>>> dev-nicolas
+
         <div className="item-info">
           <h2>{item.titulo}</h2>
           <p>Cor: {item.cor}</p>
