@@ -46,7 +46,7 @@
 
 .discount button, .shipping button {
   padding: 10px;
-  background-color: #ff00ff;
+  background-color: #f6aa1c;
   border: none;
   border-radius: 5px;
   color: #fff;
@@ -88,7 +88,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
 }
 
 .item-quantity button {
@@ -105,7 +104,7 @@
 
 .remove-item {
   margin-left: 10px;
-  color: #ff0000;
+  color: #1f1f1f;
   cursor: pointer;
 }
 

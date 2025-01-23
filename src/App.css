@@ -6,10 +6,10 @@
   --font_weight_bold: 700;
   --font_weight_extra_bold: 900;
 
-  --primary: #c92071;
+  --primary: #f6aa1c;
   --secondary: #b5b6f2;
-  --tertiary: #991956;
-  --error: #ee4266;
+  --tertiary: #1f1f1f;
+  --error: #f6aa1c;
   --success: #52ca76;
   --warning: #f6aa1c;
   --verde_off: #e7ff86;
@@ -32,6 +32,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
 /* #root {
   max-width: 1280px;
   margin: 0 auto;
