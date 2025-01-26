@@ -13,7 +13,7 @@ export function Destaque() {
                 <div className="element">
                     <span className="texto1">Oferta especial</span>
                     <h1 className="titulo">Novas cores 2025</h1>
-                    <p className="titulo2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque odio voluptatum unde minus iure odit quae, veritatis exercitationem numquam quidem hic cum iste sit nemo! Quo perspiciatis deleniti ducimus eaque.</p>
+                    <p className="titulo2">Chegou a hora de renovar o estilo do seu veículo com as Novas Cores 2025 disponíveis na Olimpo Auto Peças! Nossa nova linha traz tonalidades modernas e exclusivas, perfeitas para quem deseja destacar seu carro com um toque de personalidade e sofisticação.</p>
                     <Link to="/ProductList">Ver Oferta</Link>
                 </div>
             </div>

@@ -117,7 +117,7 @@ function ProductListingPage() {
             </div>
             <div className="card-product-list">
               <div className="produto-em-alta-cards">
-                {Array.isArray(character) && character.slice(5, 20).map(card => (
+                {Array.isArray(character) && character.slice(5, 35).map(card => (
                   card.desconto === true ? (
                     <Cards2
                       key={card.id}
