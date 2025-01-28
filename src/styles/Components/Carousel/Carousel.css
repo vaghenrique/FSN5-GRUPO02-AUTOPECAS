@@ -1,0 +1,195 @@
+.carousel {
+    background-color: var(--light-gray-4);
+    width: 100%;
+    height: 76.67vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-control-next-icon {
+    display: none;
+}
+
+.carousel-control-prev-icon {
+    display: none;
+}
+
+.carousel .carousel-indicators button {
+    width: 1rem;
+    height: 1rem;
+    margin-bottom: 3rem;
+    margin-left: 0.5rem;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background-color: var(--primary) !important;
+    color: var(--white) !important;
+    cursor: pointer !important;
+    transition: 0.5s ease !important;
+}
+
+.carousel .carousel-indicators button:hover {
+    background-color: var(--tertiary) !important;
+    color: var(--black) !important;
+}
+
+.carousel-item-row {
+    width: 100%;
+    height: 76.67vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.carousel .carousel-inner .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 5rem;
+    padding-top: 7rem;
+}
+
+.carousel .carousel-inner .texto-ofertas {
+    width: 35.41vw;
+    height: 39.11vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.carousel .carousel-inner .hero .texto-ofertas .sub-titulo {
+    font-size: 1rem;
+    color: var(--warning);
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_bold);
+    line-height: 2.125rem;
+    letter-spacing: 0.75px;
+}
+
+.carousel .carousel-inner .hero .texto-ofertas .titulo img {
+    width: 4rem;
+}
+
+.carousel .carousel-inner .hero .texto-ofertas .titulo {
+    font-size: 4rem;
+    color: var(--black);
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_extra_bold);
+    line-height: 4.125rem;
+    letter-spacing: 1px;
+}
+
+.carousel .carousel-inner .hero .texto-ofertas .texto {
+    font-size: 1.125rem;
+    color: var(--black);
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_normal);
+    line-height: 2.125rem;
+    letter-spacing: 0.75px;
+}
+
+.carousel .carousel-inner .hero .texto-ofertas .oferta {
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 0.5rem;
+    width: 13.75rem;
+    height: 3rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: var(--font_weight_bold);
+    line-height: 2.125rem;
+    letter-spacing: 0.75px;
+    cursor: pointer !important;
+    transition: 0.5s ease !important;
+}
+
+.carousel .carousel-inner .hero .texto-ofertas .oferta:hover {
+    background-color: var(--tertiary) !important;
+    color: var(--white) !important;
+}
+
+.carousel .carousel-inner .hero .texto-ofertas .oferta a {
+    text-decoration: none;
+    color: var(--white);
+
+}
+
+.carousel .carousel-inner .imagem-ilustrativa {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+}
+
+.carousel .carousel-inner .imagem-ilustrativa .ilustracao {
+    width: 8.75rem;
+    height: 8.75rem;
+    position: absolute;
+    z-index: 2;
+    margin-left: 45rem;
+    margin-top: 4rem;
+}
+
+.carousel .carousel-inner .hero .imagem-ilustrativa .sapato {
+    width: 100rem;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+    .carousel {
+        background-color: var(--light-gray-4);
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel .carousel-indicators button {
+        margin-bottom: 1rem;
+    }
+
+    .carousel .carousel-inner .hero {
+        padding-left: 0rem;
+        padding-top: 4rem;
+    }
+
+    .carousel .carousel-inner .texto-ofertas {
+        width: 38vw;
+        height: 55vh;
+    }
+
+    .carousel .carousel-inner .hero .texto-ofertas .oferta {
+        width: 13.75rem;
+        height: 3rem;
+    }
+
+    .carousel .carousel-inner .imagem-ilustrativa {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .carousel .carousel-inner .imagem-ilustrativa .ilustracao {
+        width: 8.75rem;
+        height: 8.75rem;
+        position: absolute;
+        z-index: 2;
+        margin-left: 35rem;
+        margin-bottom: 30rem;
+    }
+
+    .sapato{
+        width: 50rem;
+    }
+
+}
