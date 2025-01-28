@@ -1,0 +1,133 @@
+.cards-produtos {
+          max-width: 20.27vw;
+          height: 48.77vh;
+          position: relative;
+          z-index: 1;
+          transition: 0.3s ease;
+}
+
+.cards-produtos:hover {
+          transform: scale(1.02);
+}
+
+.fundo-card-img {
+          background-color: var(--white);
+          border-radius: 0.25rem;
+          width: 20.27vw;
+          height: 35.66vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+}
+
+.info-card {
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          margin-top: 1rem;
+          letter-spacing: 0.046875rem;
+}
+
+.cards-produtos h2 {
+          font-size: 0.75rem;
+          font-family: var(--font_primaria);
+          font-weight: var(--font_weight_bold);
+          color: var(--light-gray);
+}
+
+.cards-produtos p {
+          font-size: 1.5rem;
+          font-family: var(--font_primaria);
+          font-weight: var(--font_weight_normal);
+          color: var(--dark-gray-2);
+}
+
+.preco-produto-card {
+          display: flex;
+          gap: 0.5rem;
+}
+
+.preco-produto-card .valor-antigo {
+          font-size: 1.5rem;
+          font-family: var(--font_primaria);
+          font-weight: var(--font_weight_normal);
+          color: var(--light-gray);
+          text-decoration: line-through;
+}
+
+.preco-produto-card .valor-atual {
+          font-size: 1.5rem;
+          font-family: var(--font_primaria);
+          font-weight: var(--font_weight_bold);
+          color: var(--dark-gray);
+}
+
+.fundo-card-img .icon-oferta .texto-ofertas {
+          width: 6rem;
+          height: 2rem;
+          background-color: var(--verde_off);
+          border-radius: 1.8125rem;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          z-index: 2;
+}
+
+.fundo-card-img .icon-oferta .texto-ofertas {
+          font-size: 0.875rem;
+          font-family: var(--font_primaria);
+          font-weight: var(--font_weight_bold);
+          color: var(--dark-gray-2);
+          line-height: 0.75px;
+}
+
+.alinhar-oferta {
+          align-self: flex-start;
+          margin-top: 1rem;
+}
+
+.link-cards {
+          text-decoration: none;
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+          .cards-produtos {
+                    max-width: 18.25rem;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+          }
+
+          .fundo-card-img {
+                    background-color: var(--white);
+                    border-radius: 0.25rem;
+                    width: 18.25rem;
+                    height: 20.0625rem;
+                    display: flex;
+                    justify-content: center;
+                    align-self: center;
+          }
+
+          .fundo-card-img .icon-oferta .texto-ofertas {
+                    width: 6rem;
+                    height: 2rem;
+                    background-color: var(--verde_off);
+                    border-radius: 1.8125rem;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    z-index: 2;
+          }
+
+          .link-cards {
+                    text-decoration: none;
+          }
+
+}
