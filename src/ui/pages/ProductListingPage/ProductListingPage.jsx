@@ -34,7 +34,7 @@ function ProductListingPage() {
       <Layout>
         <section className="section-product-list">
           <div className="topico-product-list">
-            <h1>Resultado para "Tênis" - <span>389 produtos</span></h1> {/*props*/}
+            <h1>Resultado para "Faról" - <span>389 produtos</span></h1> {/*props*/}
             <div className="dropdown-ordernar-por">
               <h1>Ordenar por: <span>mais relevantes</span></h1>
               <i><img src={setaParaBaixo} alt="seta para baixo" /></i>
@@ -46,60 +46,64 @@ function ProductListingPage() {
                 <h1>Filtrar por</h1>
                 <hr className="barra-filtrar-por" />
                 <div className="topico-marka">
-                  <h1>Marka</h1>
+                  <h1>Marca</h1>
                   <div className="inputs-filtrar-por">
                     <input className="input-filtrar-por check" type="checkbox" name="check-mark1" />
-                    <label className="label-filtrar-por" htmlFor="check-mark1">Adiddas</label>{/*props*/}
+                    <label className="label-filtrar-por" htmlFor="check-mark1">Bosch</label>{/*props*/}
                   </div>
                   <div className="inputs-filtrar-por">
                     <input className="input-filtrar-por check" type="checkbox" name="check-mark2" />
-                    <label className="label-filtrar-por" htmlFor="check-mark2">Calenclaga</label>{/*props*/}
+                    <label className="label-filtrar-por" htmlFor="check-mark2">Magneti Marelli</label>{/*props*/}
                   </div>
                   <div className="inputs-filtrar-por">
                     <input className="input-filtrar-por check" type="checkbox" name="check-mark3" />
-                    <label className="label-filtrar-por" htmlFor="check-mark3">k-Swiss</label>{/*props*/}
+                    <label className="label-filtrar-por" htmlFor="check-mark3">Delphi</label>{/*props*/}
                   </div>
                   <div className="inputs-filtrar-por">
                     <input className="input-filtrar-por check" type="checkbox" name="check-mark4" />
-                    <label className="label-filtrar-por" htmlFor="check-mark4">Nike</label>{/*props*/}
+                    <label className="label-filtrar-por" htmlFor="check-mark4">NGK</label>{/*props*/}
                   </div>
                   <div className="inputs-filtrar-por">
                     <input className="input-filtrar-por check" type="checkbox" name="check-mark5" />
-                    <label className="label-filtrar-por" htmlFor="check-mark5">Puma</label>{/*props*/}
+                    <label className="label-filtrar-por" htmlFor="check-mark5">TRW</label>{/*props*/}
                   </div>
                 </div>
                 <div className="topico-categoria">
                   <h1>Categoria</h1>
                   <div className="inputs-filtrar-por">
                     <input className="input-filtrar-por check" type="checkbox" name="check-mark" />
-                    <label className="label-filtrar-por" htmlFor="check-mark">Esporte e lazer</label>{/*props*/}
+                    <label className="label-filtrar-por" htmlFor="check-mark">Freios</label>{/*props*/}
                   </div>
                   <div className="inputs-filtrar-por">
                     <input className="input-filtrar-por check" type="checkbox" name="check-mark" />
-                    <label className="label-filtrar-por" htmlFor="check-mark">Casual</label>{/*props*/}
+                    <label className="label-filtrar-por" htmlFor="check-mark">Suspensão</label>{/*props*/}
                   </div>
                   <div className="inputs-filtrar-por">
                     <input className="input-filtrar-por check" type="checkbox" name="check-mark" />
-                    <label className="label-filtrar-por" htmlFor="check-mark">Utilitário</label>{/*props*/}
+                    <label className="label-filtrar-por" htmlFor="check-mark">Motor</label>{/*props*/}
                   </div>
                   <div className="inputs-filtrar-por">
                     <input className="input-filtrar-por check" type="checkbox" name="check-mark" />
-                    <label className="label-filtrar-por" htmlFor="check-mark">Corrida</label>{/*props*/}
+                    <label className="label-filtrar-por" htmlFor="check-mark">Iluminação</label>{/*props*/}
+                  </div>
+                  <div className="inputs-filtrar-por">
+                    <input className="input-filtrar-por check" type="checkbox" name="check-mark" />
+                    <label className="label-filtrar-por" htmlFor="check-mark">Elétrica</label>{/*props*/}
                   </div>
                 </div>
                 <div className="topico-genero">
-                  <h1>Gênero</h1>
+                  <h1>Veículo</h1>
                   <div className="inputs-filtrar-por">
                     <input className="input-filtrar-por check" type="checkbox" name="check-mark" />
-                    <label className="label-filtrar-por" htmlFor="check-mark">Masculino</label>{/*props*/}
+                    <label className="label-filtrar-por" htmlFor="check-mark">Carros</label>{/*props*/}
                   </div>
                   <div className="inputs-filtrar-por">
                     <input className="input-filtrar-por check" type="checkbox" name="check-mark" />
-                    <label className="label-filtrar-por" htmlFor="check-mark">Feminino</label>{/*props*/}
+                    <label className="label-filtrar-por" htmlFor="check-mark">Motos</label>{/*props*/}
                   </div>
                   <div className="inputs-filtrar-por">
                     <input className="input-filtrar-por check" type="checkbox" name="check-mark" />
-                    <label className="label-filtrar-por" htmlFor="check-mark">Unisex</label>{/*props*/}
+                    <label className="label-filtrar-por" htmlFor="check-mark">Caminhões</label>{/*props*/}
                   </div>
                 </div>
                 <div className="topico-estado">
