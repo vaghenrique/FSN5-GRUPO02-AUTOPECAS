@@ -103,7 +103,11 @@ function ProductViewPage() {
             </p>
             <h6>Descrição do produto</h6>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos vitae quod labore dolorum ea!
+            O C70 Coupé oferece desempenho máximo -com velocidades de até 250 km/h-
+            Modelo: C70 Coupé
+            Produção: 1996-2002
+            Volume: 24395
+            Motor: DOHC de 5 cilindros em linha 1.984 e 2.435 cc.
             </p>
             <button className="botaoCompraProductView" onClick={() => addToCart(product)}>
               Comprar
