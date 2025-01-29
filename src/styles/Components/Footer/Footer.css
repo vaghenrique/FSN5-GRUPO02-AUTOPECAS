@@ -159,6 +159,96 @@ footer {
     align-items: flex-start;
     padding-top: 1.2rem;
 }
+@media (max-width: 767px) {
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .rodape .sobre {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .rodape .sobre img {
+        width: 8rem;
+        margin-bottom: 1rem;
+    }
+
+    .rodape .sobre p {
+        width: 100%;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+    .rodape .informacao {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .rodape .informacao .informacao1,
+    .rodape .informacao .informacao2 {
+        align-items: center;
+        text-align: center;
+    }
+
+    .rodape .informacao .informacao1 h4,
+    .rodape .informacao .informacao2 h4 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .rodape .informacao .informacao1 li,
+    .rodape .informacao .informacao2 li {
+        margin-bottom: 0.5rem;
+    }
+
+    .rodape .informacao .informacao1 li a,
+    .rodape .informacao .informacao2 li a {
+        font-size: 0.9rem;
+    }
+
+    .rodape .icones img {
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .contatos {
+        width: 100%;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .contatos h3 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .contatos p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .contatos h4 {
+        font-size: 0.9rem;
+    }
+
+    .barra {
+        margin: 0 1rem;
+    }
+
+    footer {
+        height: auto;
+        font-size: 0.9rem;
+        padding-top: 1rem;
+    }
+}
 
 @media (min-width:768px) and (max-width:1023px) {
     .rodape .sobre img {

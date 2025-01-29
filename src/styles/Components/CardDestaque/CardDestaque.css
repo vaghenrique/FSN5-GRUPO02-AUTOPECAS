@@ -59,7 +59,6 @@
     color: var(--white);
 }
 
-
 .card-de-oferta-blusa .button {
     width: 10rem;
     height: 3rem;
@@ -68,8 +67,6 @@
     font-family: var(--font_primary);
     font-weight: var(--font_weight_bold);  
     color: #f6aa1c;
-    
-
 }
 
 .informacao {
@@ -95,4 +92,53 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-left: 4rem;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .cards-de-ofertas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-de-oferta-blusa {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .card-de-oferta-blusa .oferta {
+        width: 100%;
+        height: auto;
+        font-size: 1rem;
+    }
+
+    .card-de-oferta-blusa h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .card-de-oferta-blusa button, .card-de-oferta-blusa .button {
+        width: 100%;
+        height: auto;
+        font-size: 1rem;
+    }
+
+    .informacao {
+        width: 100%;
+        height: auto;
+        gap: 0.5rem;
+    }
+
+    .blusa {
+        width: 100%;
+    }
+
+    .titulo-colecao {
+        font-size: 1.25rem;
+        margin: 1rem;
+        text-align: center;
+    }
 }

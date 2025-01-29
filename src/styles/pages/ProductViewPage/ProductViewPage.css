@@ -238,3 +238,44 @@
 .button-cor-4 {
   background-color: #6d70b7;
 }
+
+@media (max-width: 768px) {
+  .corpo-product-view {
+    padding: 2rem;
+  }
+
+  .product {
+    flex-direction: column;
+  }
+
+  .buyBox {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 2rem;
+  }
+
+  .carroselProductView {
+    width: 100%;
+    height: auto;
+    overflow-x: scroll;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .galery img,
+  .galery1,
+  .galery2,
+  .galery3,
+  .galery4,
+  .galery5 {
+    width: 80px;
+    height: 65px;
+  }
+
+  .carousel-cards-tenis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
