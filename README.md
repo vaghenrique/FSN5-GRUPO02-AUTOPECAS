@@ -188,9 +188,11 @@ export default Carousel;
 ## Conclusão
 
 Este guia fornece uma visão geral da estrutura do projeto, descreve os componentes e páginas, e explica como utilizar bibliotecas como `axios`, Bootstrap e React Router.
-<<<<<<< HEAD
+
 ```
+<<<<<<< HEAD
 =======
+
 >>>>>>> teste-react
 
 ```
