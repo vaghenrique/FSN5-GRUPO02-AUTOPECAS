@@ -8,7 +8,9 @@
 
 img.produto-em-alta-cards {
   width: 100%;
+  height: auto;
 }
+
 .container-produtos-em-alta {
   display: flex;
   flex-direction: column;
@@ -57,6 +59,28 @@ img.produto-em-alta-cards {
 
 .produtos-em-alta .topico-section .link-ver-todos:hover {
   color: var(--tertiary);
+}
+
+/* Media Queries for Tablets in Portrait Mode */
+@media (max-width: 1024px) {
+  .produto-em-alta-cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+  }
+
+  .produtos-em-alta .topico-section {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .produtos-em-alta .topico-section h1,
+  .produtos-em-alta .topico-section h2,
+  .produtos-em-alta .topico-section .link-ver-todos {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 0.75rem;
+  }
 }
 
 /* Media Queries for Mobile Devices */
