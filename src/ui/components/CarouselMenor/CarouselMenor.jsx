@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "@styles/Components/CarouselMenor/CarouselMenor.css";
-import sapatoAzul from "@assets/img/sapato_card.png";
+import farol from "@assets/img/farol.png";
 
 function CarouselMenor() {
   return (
@@ -25,35 +25,35 @@ function CarouselMenor() {
             <div className="carousel-item active  primeiro" data-bs-interval="2000">
               <div className="carousel-item-row-product-view">
                 <div className="imagem-ilustrativa-product-view">
-                  <img src={sapatoAzul} className="d-block sapato-product-view" alt="sapato" />
+                  <img src={farol} className="d-block sapato-product-view" alt="sapato" />
                 </div>
               </div>
             </div>
             <div className="carousel-item segundo" data-bs-interval="2000">
               <div className="carousel-item-row-product-view">
                 <div className="imagem-ilustrativa-product-view">
-                  <img src={sapatoAzul} className="d-block sapato-product-view" alt="sapato" />
+                  <img src={farol} className="d-block sapato-product-view" alt="sapato" />
                 </div>
               </div>
             </div>
             <div className="carousel-item terceiro" data-bs-interval="2000">
               <div className="carousel-item-row-product-view">
                 <div className="imagem-ilustrativa-product-view">
-                  <img src={sapatoAzul} className="d-block sapato-product-view" alt="sapato" />
+                  <img src={farol} className="d-block sapato-product-view" alt="sapato" />
                 </div>
               </div>
             </div>
             <div className="carousel-item quarto" data-bs-interval="2000">
               <div className="carousel-item-row-product-view">
                 <div className="imagem-ilustrativa-product-view">
-                  <img src={sapatoAzul} className="d-block sapato-product-view" alt="sapato" />
+                  <img src={farol} className="d-block sapato-product-view" alt="sapato" />
                 </div>
               </div>
             </div>
             <div className="carousel-item quinto" data-bs-interval="2000">
               <div className="carousel-item-row-product-view">
                 <div className="imagem-ilustrativa-product-view">
-                  <img src={sapatoAzul} className="d-block sapato-product-view" alt="sapato" />
+                  <img src={farol} className="d-block sapato-product-view" alt="sapato" />
                 </div>
               </div>
             </div>

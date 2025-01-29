@@ -5,7 +5,7 @@ import "@styles/pages/ProductListingPage/ProductListingPage.css"
 import Layout from "@components/Layout/Layout"
 import Cards from "@components/Cards/Cards"
 import Cards2 from "@components/Cards/Cards2"
-import sapatoAzul from "@assets/img/sapato_card.png"
+import farol from "@assets/img/farol.png";
 import setaParaBaixo from "@assets/img/seta_para_baixo.png"
 import { useState, useEffect } from "react"
 import axios from "axios"
@@ -126,7 +126,7 @@ function ProductListingPage() {
                     <Cards2
                       key={card.id}
                       oferta={card.valordesconto}
-                      foto={sapatoAzul}
+                      foto={farol}
                       titulo={card.titulo}
                       descricao={card.descricao}
                       valorantigo={card.valorantigo}
@@ -135,7 +135,7 @@ function ProductListingPage() {
                   ) : (
                     <Cards
                       key={card.id}
-                      foto={sapatoAzul}
+                      foto={farol}
                       titulo={card.titulo}
                       descricao={card.descricao}
                       valorantigo={card.valorantigo}
