@@ -191,5 +191,6 @@ Este guia fornece uma visão geral da estrutura do projeto, descreve os componen
 <<<<<<< HEAD
 ```
 =======
+
 ```
 >>>>>>> teste-react
