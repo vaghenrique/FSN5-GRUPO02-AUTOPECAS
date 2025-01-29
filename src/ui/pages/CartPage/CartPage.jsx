@@ -65,7 +65,7 @@ const removeItem = (itemId, cartItems, setCartItems) => {
 
 function CartSummary({ cartItems }) {
   const total = cartItems.reduce((acc, item) => {
-    const price = isNaN(item.valoratual) ? 0 : parseFloat(item.valoratual);
+    const price = isNaN(item.valoratual) ? 0 : parseFloat(item.valoratual.toString().replace(',', '.'));
     return acc + price * item.quantity;
   }, 0);
 
@@ -75,12 +75,24 @@ function CartSummary({ cartItems }) {
       <div className="summary-details">
         <p>Subtotal: <span>R$ {total.toFixed(2)}</span></p>
         <p>Frete: <span>R$ 0,00</span></p>
-        <p>Desconto: <span>R$ 200,00</span></p>
-        <p>Total: <span className="total-price">R$ {total.toFixed(2)}</span></p>
-        <p className="installments">ou 10x de R$ {(total / 10).toFixed(2)} sem juros</p>
-        <button className="continue-button">
-          <Link to="/Login" className="continue-button">Continuar</Link>
-        </button>
+        <p>Desconto: <span>{total === 0 ? "R$ 0,00" : "R$ 200,00"}</span></p>
+        <p>
+          Total:{" "}
+          <span className="total-price">
+            {total === 0 ? "R$ 0,00" : `R$ ${Math.max(total - 200, 0).toFixed(2)}`}
+          </span>
+        </p>
+        {total > 200 && (
+          <p className="installments">
+            ou 10x de R$ {((total - 200) / 10).toFixed(2)} sem juros
+          </p>
+        )}
+        {total <= 200 && total !== 0 && (
+          <p className="installments">Adicione mais itens para aproveitar o desconto!</p>
+        )}
+        {total === 0 && (
+          <p className="installments">Seu carrinho está vazio.</p>
+        )}
       </div>
     </div>
   );
