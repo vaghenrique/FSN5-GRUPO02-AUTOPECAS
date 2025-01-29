@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Layout from "@components/Layout/Layout";
 import Cards2 from "@components/Cards/Cards2";
 import Cards from "@components/Cards/Cards";
-import sapatoAzul from "@assets/img/sapato_card.png";
+import farol from "@assets/img/farol.png";
 import axios from "axios";
 import flechaRosa from "@assets/img/flecha_icon.svg";
 import { Link } from "react-router-dom";
@@ -17,7 +17,7 @@ function CartItem({ item, updateQuantity, removeItem }) {
       <div className="item-details">
 
 
-        <img src={sapatoAzul} alt={item.titulo} />
+        <img src={farol} alt={item.titulo} />
 
         <div className="item-info">
           <h2>{item.titulo}</h2>
@@ -173,7 +173,7 @@ function CartPage() {
                     <Cards2
                       key={card.id}
                       oferta={card.valordesconto}
-                      foto={sapatoAzul}
+                      foto={farol}
                       titulo={card.titulo}
                       descricao={card.descricao}
                       valorantigo={card.valorantigo}
@@ -182,7 +182,7 @@ function CartPage() {
                   ) : (
                     <Cards
                       key={card.id}
-                      foto={sapatoAzul}
+                      foto={farol}
                       titulo={card.titulo}
                       descricao={card.descricao}
                       valorantigo={card.valorantigo}
