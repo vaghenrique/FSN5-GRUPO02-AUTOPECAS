@@ -3,11 +3,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 700px;
+    height: 530px;
 }
 
 .topo>div {
-    width: 1200px;
+    width: 900px;
     display: flex;
     justify-content: space-around;
 }
