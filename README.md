@@ -79,14 +79,14 @@ src/
 ### Iniciando o Projeto
 
 1. **Instale as dependências**:
-    ```bash
-    npm install
-    ```
+  ```bash
+  npm install
+  ```
 
 2. **Inicie o servidor de desenvolvimento**:
-    ```bash
-    npm run dev
-    ```
+  ```bash
+  npm run dev
+  ```
 
 ### Utilização de Componentes
 
@@ -100,11 +100,11 @@ import Footer from '@components/Footer/Footer.jsx'
 
 const Layout = ({ children }) => {
   return (
-    <div>
-      <Header />
-      {children}
-      <Footer />
-    </div>
+  <div>
+    <Header />
+    {children}
+    <Footer />
+  </div>
   );
 };
 
@@ -124,12 +124,12 @@ import Error404 from '@pages/Error404/Error404';
 
 const App = () => (
   <Router>
-    <Switch>
-      <Route exact path="/" component={HomePage} />
-      <Route path="/products" component={ProductListingPage} />
-      <Route path="/product/:id" component={ProductViewPage} />
-      <Route component={Error404} />
-    </Switch>
+  <Switch>
+    <Route exact path="/" component={HomePage} />
+    <Route path="/products" component={ProductListingPage} />
+    <Route path="/product/:id" component={ProductViewPage} />
+    <Route component={Error404} />
+  </Switch>
   </Router>
 );
 
@@ -148,20 +148,20 @@ const HomePage = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    const fetchData = async () => {
-      const result = await axios.get('https://api.exemplo.com/produtos');
-      setProducts(result.data);
-    };
+  const fetchData = async () => {
+    const result = await axios.get('https://api.exemplo.com/produtos');
+    setProducts(result.data);
+  };
 
-    fetchData();
+  fetchData();
   }, []);
 
   return (
-    <div>
-      {products.map(product => (
-        <div key={product.id}>{product.name}</div>
-      ))}
-    </div>
+  <div>
+    {products.map(product => (
+    <div key={product.id}>{product.name}</div>
+    ))}
+  </div>
   );
 };
 
@@ -178,23 +178,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const Carousel = () => (
   <div id="carouselExample" className="carousel slide" data-ride="carousel">
-    {/* Carrossel conteúdo */}
+  {/* Carrossel conteúdo */}
   </div>
 );
 
 export default Carousel;
 ```
-
-## Conclusão
-
-Este guia fornece uma visão geral da estrutura do projeto, descreve os componentes e páginas, e explica como utilizar bibliotecas como `axios`, Bootstrap e React Router.
-
-```
-<<<<<<< HEAD
-
-=======
-
->>>>>>> teste-react
-
-```
->>>>>>> teste-react
