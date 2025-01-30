@@ -2,7 +2,7 @@ import "@styles/Components/CardDestaque/CardDestaque.css"
 import motor from "@assets/img/motor.png"
 import pistao from "@assets/img/pistao.png"
 import filtros from "@assets/img/filtros.png"
-
+import { Link } from "react-router-dom"
 
 function CardDestaque() {
     return (
@@ -17,7 +17,7 @@ function CardDestaque() {
                             </div>
                             <h2>Motor <br /> automotivo</h2>
                             <button>
-                                <a className="button" href="/ProductList">Comprar</a>
+                                <Link className="button" to="/ProductList">Comprar</Link>
                             </button>
                         </div>
                         <div className="blusa-card">
@@ -31,7 +31,7 @@ function CardDestaque() {
                             </div>
                             <h2>Novos <br /> Pistões</h2>
                             <button>
-                                <a className="button" href="/ProductList">Comprar</a>
+                                <Link className="button" to="/ProductList">Comprar</Link>
                             </button>
                         </div>
                         <div className="blusa-card">
@@ -45,7 +45,7 @@ function CardDestaque() {
                             </div>
                             <h2>Filtros <br />resistentes</h2>
                             <button>
-                                <a className="button" href="/ProductList">Comprar</a>
+                                <Link className="button" to="/ProductList">Comprar</Link>
                             </button>
                         </div>
                         <div className="blusa-card">
