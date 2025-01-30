@@ -1,7 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "@styles/Components/Carousel/Carousel.css";
-import freio from "@assets/img/freio.png";
 import ilustracao from "@assets/img/ornament.svg";
 import fire from "@assets/img/fire.png";
 import bmw from "@assets/img/bmw.png";

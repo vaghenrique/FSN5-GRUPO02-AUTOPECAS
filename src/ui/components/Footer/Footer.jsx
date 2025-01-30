@@ -54,7 +54,7 @@ function Footer() {
           <hr className="barra" />
         </section>
         <footer>
-          <p>@ 2025 Olimpo AutoPeças</p>
+          <p>&copy; 2025 Olimpo AutoPeças | Todos os Direitos Reservados.</p>
         </footer>
       </div>
     </>

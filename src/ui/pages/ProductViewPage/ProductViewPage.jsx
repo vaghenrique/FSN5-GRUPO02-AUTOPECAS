@@ -103,11 +103,10 @@ function ProductViewPage() {
             </p>
             <h6>Descrição do produto</h6>
             <p>
-            O C70 Coupé oferece desempenho máximo -com velocidades de até 250 km/h-
-            Modelo: C70 Coupé
-            Produção: 1996-2002
-            Volume: 24395
-            Motor: DOHC de 5 cilindros em linha 1.984 e 2.435 cc.
+              Um design moderno com detalhes em neon azul suave ao redor das lentes principais. 
+              As lentes possuem um formato arredondado com acabamento interno em preto brilhante, o que realça seu aspecto sofisticado. 
+              A carcaça é elegante e compacta, combinando bem com veículos premium, como os da marca Jaguar. 
+              A presença de refletores embutidos e componentes para luz alta e baixa sugere alta eficiência.
             </p>
             <button className="botaoCompraProductView" onClick={() => addToCart(product)}>
               Comprar

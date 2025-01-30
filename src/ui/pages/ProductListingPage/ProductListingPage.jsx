@@ -1,6 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable no-undef */
-// import "./HomePage.css"
 import "@styles/pages/ProductListingPage/ProductListingPage.css"
 import Layout from "@components/Layout/Layout"
 import Cards from "@components/Cards/Cards"
@@ -34,7 +31,7 @@ function ProductListingPage() {
       <Layout>
         <section className="section-product-list">
           <div className="topico-product-list">
-            <h1>Resultado para "Faról" - <span>389 produtos</span></h1> {/*props*/}
+            <h1>Resultado para "Farol" - <span>389 produtos</span></h1> {/*props*/}
             <div className="dropdown-ordernar-por">
               <h1>Ordenar por: <span>mais relevantes</span></h1>
               <i><img src={setaParaBaixo} alt="seta para baixo" /></i>
