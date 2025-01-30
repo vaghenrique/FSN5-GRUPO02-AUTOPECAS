@@ -1,4 +1,108 @@
-# Guia de Estrutura do Projeto
+# **Olimpo Peças - E-commerce de Autopeças**  
+
+**Descrição:**  
+Olimpo Peças é uma aplicação de e-commerce fictícia desenvolvida em **React**, com foco na venda de autopeças. O projeto foi criado com uma arquitetura organizada, boa componentização e integração com uma API simulada para listagem de produtos.  
+
+---
+
+## 🛠️ Estrutura de Branches
+
+A organização do projeto segue um fluxo de branches que facilita a colaboração e a integração contínua:
+
+- **`dev-sally`**: Branch de desenvolvimento da Sally.
+- **`dev-gabriel`**: Branch de desenvolvimento do Gabriel.
+- **`dev-caio`**: Branch de desenvolvimento do Caio.
+- **`dev-edro`**: Branch de desenvolvimento do Pedro.
+- **`dev-nicolas`**: Branch de desenvolvimento do Nicolas.
+- **`test-react`**: Branch destinada à integração e testes de funcionalidades das branches individuais.
+- **`projeto-react`**: Branch principal onde o código final, validado, é consolidado.
+
+---
+
+## 🔄 Fluxo de Trabalho
+
+1. Cada desenvolvedor trabalha em sua branch individual de desenvolvimento.
+2. Ao finalizar uma funcionalidade ou correção, a branch individual é mergeada na branch `test-react`.
+3. A branch `test-react` é utilizada para realizar testes integrados, garantindo que todas as funcionalidades coexistam corretamente.
+4. Após a validação na branch `test-react`, é feito merging na branch `projeto-react`.
+
+---
+
+
+## **Funcionalidades Principais:**  
+- **HomePage:** Exibe uma vitrine dinâmica com produtos, destacando ofertas especiais.  
+- **Lista de Produtos:** Apresenta todos os produtos cadastrados com detalhes.  
+- **Detalhes do Produto:** Informações completas de um produto selecionado.  
+- **Carrinho:** Permite adicionar, remover e ajustar quantidades de produtos.  
+- **Navegação Dinâmica:** Implementada com **React Router**.  
+- **Persistência de Dados:** Carrinho salvo com **localStorage**.  
+- **Responsividade:** Layout adaptável para dispositivos móveis e desktops.  
+
+---
+
+## **Tecnologias Utilizadas:**  
+- **React:** Biblioteca para construção da interface do usuário.  
+- **Axios:** Requisições HTTP à MockAPI.  
+- **Bootstrap:** Estilização responsiva.  
+- **Vite:** Ferramenta para desenvolvimento e build.  
+
+---
+
+## **Instalação e Execução**  
+
+### **Pré-requisitos**  
+Certifique-se de ter instalado:  
+- **Node.js** (versão recomendada: 16 ou superior)  
+- **Git**  
+
+### **Passos para Instalar:**  
+
+1. Clone o repositório:  
+```bash
+git clone <URL_DO_REPOSITORIO>
+```
+
+2. Acesse o diretório do projeto:  
+```bash
+cd fsn5-grupo02-autopecas
+```
+
+3. Instale as dependências do projeto:  
+```bash
+npm install
+```
+
+4. Execute a aplicação no modo de desenvolvimento:  
+```bash
+npm run dev
+```
+
+5. Para compilar a aplicação para produção:  
+```bash
+npm run build
+```
+
+---
+
+## **Comandos Git Utilizados**  
+- `git clone`: Clonar o repositório.  
+- `git status`: Verificar status dos arquivos.  
+- `git add .`: Adicionar todas as modificações ao staging.  
+- `git commit -m "mensagem do commit"`: Criar um commit com uma mensagem descritiva.  
+- `git pull`: Atualizar o repositório local com as mudanças remotas.  
+- `git push`: Enviar as mudanças locais para o repositório remoto.  
+- `git merge <branch>`: Mesclar branches.
+
+---
+
+## **Configuração do Vite**
+Para criar e configurar o projeto com **Vite**, utilize os comandos:  
+```bash
+npm create vite@latest .
+```
+Selecione o framework **React** durante a configuração.
+
+---
 
 ## Estrutura do Projeto
 
@@ -7,6 +111,31 @@ src/
 |-- assets/
 |   |-- favicon/
 |   |-- img/
+|-- styles/
+|   |-- Components/
+|   |   |-- CardDestaque/
+|   |   |-- Cards/
+|   |   |-- Carousel/
+|   |   |-- CarouselMenor/
+|   |   |-- Destaque/
+|   |   |-- Footer/
+|   |   |-- Header/
+|   |   |-- HeaderMenor/
+|   |   |-- IconDestaque/
+|   |   |-- Main/
+|   |-- pages/
+|   |   |-- CartPage/
+|   |   |-- ConfirmarCompraPage/
+|   |   |-- CriarContaPage/
+|   |   |-- CriarFormularioPage/
+|   |   |-- Error404/
+|   |   |-- HomePage/
+|   |   |-- InformacoesPage/
+|   |   |-- LoginPage/
+|   |   |-- PaginaDeSucessoPage/
+|   |   |-- PedidosPage/
+|   |   |-- ProductListingPage/
+|   |   |-- ProductViewPage/
 |-- ui/
 |   |-- Components/
 |   |   |-- CardDestaque/
@@ -32,155 +161,18 @@ src/
 |   |   |-- PedidosPage/
 |   |   |-- ProductListingPage/
 |   |   |-- ProductViewPage/
-|-- styles
 |-- App.css
 |-- App.jsx
 |-- main.jsx
 ```
 
-## Componentes
+---
 
-- **CardDestaque**: Exibe cartões de destaque na página principal.
-- **Cards**: Exibe cartões genéricos de produtos.
-- **Carousel**: Exibe um carrossel de imagens para destaque de produtos.
-- **CarouselMenor**: Exibe um carrossel menor para destaque adicional.
-- **Destaque**: Exibe seções de destaque no site.
-- **Footer**: Componente de rodapé com informações de contato e links úteis.
-- **Header**: Componente de cabeçalho com navegação principal.
-- **HeaderMenor**: Variante menor do componente de cabeçalho.
-- **IconDestaque**: Exibe ícones de destaque.
-- **Layout**: Componente principal que envolve o conteúdo da página.
+## **Contribuições**  
+Para contribuir com melhorias, sinta-se à vontade para abrir Pull Requests.
 
-## Páginas
+---
 
-- **CartPage**: Página do carrinho de compras.
-- **ConfirmarCompraPage**: Página de confirmação de compra.
-- **CriarContaPage**: Página para criação de nova conta de usuário.
-- **CriarFormularioPage**: Página para criação de formulários personalizados.
-- **Error404**: Página de erro para rotas não encontradas.
-- **HomePage**: Página inicial com produtos e ofertas principais.
-- **InformacoesPage**: Página de informações gerais.
-- **LoginPage**: Página de login para usuários.
-- **PaginaDeSucessoPage**: Página pós-compra bem-sucedida.
-- **PedidosPage**: Página com histórico de pedidos do usuário.
-- **ProductListingPage**: Página de listagem de produtos.
-- **ProductViewPage**: Página de visualização detalhada de um produto.
-
-## Bibliotecas Utilizadas
-
-- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
-- **axios**: Biblioteca para realizar requisições HTTP.
-- **Alias** : Biblioteca para organizar imports.
-- **Bootstrap**: Framework CSS para design responsivo e componentes pré-estilizados.
-- **React Router**: Biblioteca para gerenciamento de rotas no React.
-
-## Como Utilizar
-
-### Iniciando o Projeto
-
-1. **Instale as dependências**:
-  ```bash
-  npm install
-  ```
-
-2. **Inicie o servidor de desenvolvimento**:
-  ```bash
-  npm run dev
-  ```
-
-### Utilização de Componentes
-
-Os componentes estão localizados na pasta `src/ui/Components`. Você pode importá-los e usá-los nas suas páginas conforme necessário!
-
-```jsx
-import React from 'react';
-import Header from '@components/Header/Header.jsx'
-import Footer from '@components/Footer/Footer.jsx'
-
-
-const Layout = ({ children }) => {
-  return (
-  <div>
-    <Header />
-    {children}
-    <Footer />
-  </div>
-  );
-};
-
-export default Layout;
-```
-
-### Utilização de Páginas
-
-As páginas estão localizadas na pasta `src/ui/pages`. Utilize React Router para configurar as rotas do seu aplicativo.
-
-```jsx
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import HomePage from '@pages/HomePage/HomePage';
-import ProductListingPage from '@pages/ProductListingPage/ProductListingPage';
-import ProductViewPage from '@pages/ProductViewPage/ProductViewPage';
-import Error404 from '@pages/Error404/Error404';
-
-const App = () => (
-  <Router>
-  <Switch>
-    <Route exact path="/" component={HomePage} />
-    <Route path="/products" component={ProductListingPage} />
-    <Route path="/product/:id" component={ProductViewPage} />
-    <Route component={Error404} />
-  </Switch>
-  </Router>
-);
-
-export default App;
-```
-
-### Utilização de `axios`
-
-Utilize `axios` para fazer requisições HTTP em seus componentes.
-
-```jsx
-import axios from 'axios';
-import React, { useState, useEffect } from 'react';
-
-const HomePage = () => {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-  const fetchData = async () => {
-    const result = await axios.get('https://api.exemplo.com/produtos');
-    setProducts(result.data);
-  };
-
-  fetchData();
-  }, []);
-
-  return (
-  <div>
-    {products.map(product => (
-    <div key={product.id}>{product.name}</div>
-    ))}
-  </div>
-  );
-};
-
-export default HomePage;
-```
-
-### Utilização de Bootstrap
-
-Adicione estilos e componentes do Bootstrap ao seu projeto.
-
-```jsx
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
-const Carousel = () => (
-  <div id="carouselExample" className="carousel slide" data-ride="carousel">
-  {/* Carrossel conteúdo */}
-  </div>
-);
-
-export default Carousel;
-```
+**Equipe FSN5-GRUPO02:**  
+Sally | Gabriel | Caio | Pedro | Nicolas  
+Sempre em busca de inovação e excelência. 🚗✨
