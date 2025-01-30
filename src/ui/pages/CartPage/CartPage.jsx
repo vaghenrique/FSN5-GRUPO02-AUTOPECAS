@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Layout from "@components/Layout/Layout";
 import Cards2 from "@components/Cards/Cards2";
 import Cards from "@components/Cards/Cards";
-import sapatoAzul from "@assets/img/sapato_card.png";
+import farol from "@assets/img/farol.png";
 import axios from "axios";
 import flechaRosa from "@assets/img/flecha_icon.svg";
 import { Link } from "react-router-dom";
@@ -17,7 +17,7 @@ function CartItem({ item, updateQuantity, removeItem }) {
       <div className="item-details">
 
 
-        <img src={sapatoAzul} alt={item.titulo} />
+        <img src={farol} alt={item.titulo} />
 
         <div className="item-info">
           <h2>{item.titulo}</h2>
@@ -65,7 +65,7 @@ const removeItem = (itemId, cartItems, setCartItems) => {
 
 function CartSummary({ cartItems }) {
   const total = cartItems.reduce((acc, item) => {
-    const price = isNaN(item.valoratual) ? 0 : parseFloat(item.valoratual);
+    const price = isNaN(item.valoratual) ? 0 : parseFloat(item.valoratual.toString().replace(',', '.'));
     return acc + price * item.quantity;
   }, 0);
 
@@ -75,12 +75,24 @@ function CartSummary({ cartItems }) {
       <div className="summary-details">
         <p>Subtotal: <span>R$ {total.toFixed(2)}</span></p>
         <p>Frete: <span>R$ 0,00</span></p>
-        <p>Desconto: <span>R$ 200,00</span></p>
-        <p>Total: <span className="total-price">R$ {total.toFixed(2)}</span></p>
-        <p className="installments">ou 10x de R$ {(total / 10).toFixed(2)} sem juros</p>
-        <button className="continue-button">
-          <Link to="/Login" className="continue-button">Continuar</Link>
-        </button>
+        <p>Desconto: <span>{total === 0 ? "R$ 0,00" : "R$ 200,00"}</span></p>
+        <p>
+          Total:{" "}
+          <span className="total-price">
+            {total === 0 ? "R$ 0,00" : `R$ ${Math.max(total - 200, 0).toFixed(2)}`}
+          </span>
+        </p>
+        {total > 200 && (
+          <p className="installments">
+            ou 10x de R$ {((total - 200) / 10).toFixed(2)} sem juros
+          </p>
+        )}
+        {total <= 200 && total !== 0 && (
+          <p className="installments">Adicione mais itens para aproveitar o desconto!</p>
+        )}
+        {total === 0 && (
+          <p className="installments">Seu carrinho está vazio.</p>
+        )}
       </div>
     </div>
   );
@@ -161,7 +173,7 @@ function CartPage() {
                     <Cards2
                       key={card.id}
                       oferta={card.valordesconto}
-                      foto={sapatoAzul}
+                      foto={farol}
                       titulo={card.titulo}
                       descricao={card.descricao}
                       valorantigo={card.valorantigo}
@@ -170,7 +182,7 @@ function CartPage() {
                   ) : (
                     <Cards
                       key={card.id}
-                      foto={sapatoAzul}
+                      foto={farol}
                       titulo={card.titulo}
                       descricao={card.descricao}
                       valorantigo={card.valorantigo}

@@ -3,7 +3,7 @@ import "@styles/pages/ProductViewPage/ProductViewPage.css";
 import Cards2 from "@components/Cards/Cards2";
 import Cards from "@components/Cards/Cards";
 import CarouselMenor from "@components/CarouselMenor/CarouselMenor";
-import sapatoAzul from "@assets/img/sapato_card.png";
+import farol from "@assets/img/farol.png";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -34,7 +34,7 @@ function ProductViewPage() {
       descricao: "Farol | VolvoC70 | REF:38416711",
       valorantigo: "919.00",
       valoratual: 719.90,
-      foto: sapatoAzul,
+      foto: farol,
     });
   }, []); 
 
@@ -103,7 +103,11 @@ function ProductViewPage() {
             </p>
             <h6>Descrição do produto</h6>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos vitae quod labore dolorum ea!
+            O C70 Coupé oferece desempenho máximo -com velocidades de até 250 km/h-
+            Modelo: C70 Coupé
+            Produção: 1996-2002
+            Volume: 24395
+            Motor: DOHC de 5 cilindros em linha 1.984 e 2.435 cc.
             </p>
             <button className="botaoCompraProductView" onClick={() => addToCart(product)}>
               Comprar
@@ -120,7 +124,7 @@ function ProductViewPage() {
               <Cards2
                 key={card.id}
                 oferta={card.valordesconto}
-                foto={sapatoAzul}
+                foto={farol}
                 titulo={card.titulo}
                 descricao={card.descricao}
                 valorantigo={card.valorantigo}
@@ -129,7 +133,7 @@ function ProductViewPage() {
             ) : (
               <Cards
                 key={card.id}
-                foto={sapatoAzul}
+                foto={farol}
                 titulo={card.titulo}
                 descricao={card.descricao}
                 valorantigo={card.valorantigo}

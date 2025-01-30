@@ -6,7 +6,7 @@ import Carousel from "@components/Carousel/Carousel.jsx";
 import Cards from "@components/Cards/Cards.jsx";
 import Cards2 from "@components/Cards/Cards2.jsx";
 import IconDestaque from "@components/IconDestaque/IconDestaque.jsx";
-import sapatoAzul from "@assets/img/sapato_card.png";
+import farol from "@assets/img/farol.png";
 import flechaRosa from "@assets/img/flecha_icon.svg";
 import CardDestaque from "@components/CardDestaque/CardDestaque.jsx";
 import "@styles/pages/HomePage/HomePage.css";
@@ -59,7 +59,7 @@ const Home = () => {
                     <Cards2
                       key={card.id}
                       oferta={card.valordesconto}
-                      foto={sapatoAzul}
+                      foto={farol}
                       titulo={card.titulo}
                       descricao={card.descricao}
                       valorantigo={card.valorantigo}
@@ -68,7 +68,7 @@ const Home = () => {
                   ) : (
                     <Cards
                       key={card.id}
-                      foto={sapatoAzul}
+                      foto={farol}
                       titulo={card.titulo}
                       descricao={card.descricao}
                       valorantigo={card.valorantigo}
