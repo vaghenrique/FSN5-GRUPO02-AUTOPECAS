@@ -21,7 +21,7 @@ function Header() {
               <li><Link to="/" className="nav-footer-home">Home</Link></li>
               <li><Link to="/ProductList" className="nav-footer-produtos">Produtos</Link></li>
               <li><Link to="/ProductView" className="nav-footer-categorias">Categorias</Link></li>
-              <li><Link to="/Cart" className="nav-footer-pedidos">Meus Pedidos</Link></li>
+              <li><Link to="/Cart" className="nav-footer-pedidos">Carrinho</Link></li>
             </div>
           </div>
         </nav>

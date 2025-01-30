@@ -147,9 +147,9 @@ nav a img {
     }
 
     .nav-footer {
-        flex-direction: column;
+        font-weight: bold;
+        flex-direction: row;
         align-items: center;
-        display: none;
     }
 
     .nav-footer a {

@@ -36,6 +36,7 @@
 .discount, .shipping {
   display: flex;
   align-items: center;
+  gap: 5px;
 }
 
 .discount input, .shipping input {
@@ -190,7 +191,7 @@
 
   .item-details {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
   }
 
@@ -201,7 +202,6 @@
 
   .item-pricing {
     text-align: left;
-    width: 100%;
   }
 
   /* Botões responsivos para quantidade */
