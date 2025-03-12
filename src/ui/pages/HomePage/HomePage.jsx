@@ -7,7 +7,7 @@ import Cards from "@components/Cards/Cards.jsx";
 import Cards2 from "@components/Cards/Cards2.jsx";
 import IconDestaque from "@components/IconDestaque/IconDestaque.jsx";
 import farol from "@assets/img/farol.png";
-import flechaRosa from "@assets/img/flecha_icon.svg";
+import flecha from "@assets/img/flecha_icon.svg";
 import CardDestaque from "@components/CardDestaque/CardDestaque.jsx";
 import "@styles/pages/HomePage/HomePage.css";
 import { Link } from "react-router-dom";
@@ -46,7 +46,7 @@ const Home = () => {
             <h1>Produtos em alta</h1>
             <h2>
               <Link to="/ProductList" className="link-ver-todos">
-                Ver todos <img src={flechaRosa} alt="flecha" />
+                Ver todos <img src={flecha} alt="flecha" />
               </Link>
             </h2>
           </div>
